@@ -54,52 +54,37 @@ The slides can be viewed from the link at the top of the repository.
 
 # Boot Camp Summary
 
+## Day One
 
-## Planned
+* Continuous Integration
+  * What it is and why we do it
+  * Examples of different CI systems
+  * Exercise: add Travis to fork of existing repo
+  * Exercise: Make change to their fork and show (hopefully) successful build
+* Continuous Delivery/Deployment
+  * What it is and why we do it
+  * Benefit of fast feedback—small/fast deployments
+* Branch based development
+  * What is a branch
+  * Explain feature branching and pull requests
+  * Exercise: Get them to make two changes using feature branches
+* Trunk based development
+  * What is a feature shield
+  * Exercise: Get them to implement a feature shield
+* Comparison of approaches
 
-* Working with products and Refining requirements
-* Agile + related methodologies
-* Coupling and Cohesion
-* Revisit data store - Relational vs Not
-* CRC + Diagrams / OO Design
-* Composition vs Inheritance
+## Day Two
 
-## Carried over
+Agile and related methodologies and tools
+
+## Day Three
+
+Testing: 
 
 * Test Doubles
 * Dependency Injection
 * Mocking frameworks
 * 2nd Tier of Testing Pyramid
-* Intro to Data Stores - Repo Pattern
-* Continuous Integration as a demo
-* CI practical
-* Branching / PRs
-* Trunk development vs branch development
-* How the internet works
-
-<!--- 
-
-## Continuous Integration
-
-* What is CI
-* Why is CI important
-* Demo of how CI can be applied to a project (Travis or similar against public repo)
-* CI practical—setting up Travis or similar on own repo?
-
-## More on source control
-
-* Branching
-* Pull requests
-* Trunk vs branch development
-
-# How the internet works
-
-* Hostnames, IP, DNS
-* Networking
-* Physical infrastructure
-* HTTP
-
---->
 
 # Briefing for organisation mentors
 
