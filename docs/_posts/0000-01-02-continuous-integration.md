@@ -150,3 +150,137 @@ Note: Just like the boy who cried wolf…
 -[+] Meaningful failures
 -[+] Repeatability
 
+---
+
+# Good practices
+
+-[+] When the build is broken, fix it (don’t make other changes)
+-[+] Be aware of whether your code builds successfully (use notifications etc)
+-[+] Don’t ‘commit & quit’
+-[+] You broke it, you fix it
+-[+] Fix or delete flaky tests (don’t just re-run)
+-[+] Make sure your build stays fast—5 minutes or less for some positive feedback
+
+---
+
+# Typical Enterprise ‘Pipeline’
+
+* Run fast tests
+* Run slow tests and static analysis
+* Publish packaged code
+* Deploy to dev
+* Deploy to test
+* Deploy to production
+
+---
+
+What? ✅   
+Why? ✅  
+How? …
+
+---
+
+# Many options
+
+* Bamboo
+* CircleCI
+* CruiseControl.NET
+* GitLab
+* GoCD
+* Jenkins
+* TravisCI
+
+---
+
+# Common Features
+
+-[+] GitHub Integration
+-[+] Support for performing tasks in parallel
+-[+] Publishing / releasing built artifacts
+-[+] SCM support: Git / Subversion / CVS / etc.
+-[+] Language / build tool support
+-[+] Notifications
+-[+] Configuration as code
+
+---
+
+# E.g. Travis CI
+
+-[+] Authorise Travis CI to use your github.com account
+-[+] Activate Travis CI with your repository
+-[+] Add a `travis.yml` file to your repository
+-[+] Optional: add build badge to the repository
+
+---
+
+# Then…
+
+-[+] GitHub tells Travis CI each time there is something to fetch and build
+-[+] Travis fetches that version of the code
+-[+] Travis works out what to run based on repository contents (including `travis.yml`)
+-[+] Travis reports status back to GitHub to mark commits with success/failure
+
+---
+
+`travis.yml`:
+
+```yaml
+language: java
+```
+
+```yaml
+language: csharp
+solution: solution-name.sln
+```
+
+```yaml
+language: python
+  python:
+    - "3.6"
+  script:
+    - pytest
+```
+
+Note: Travis looks at repo to work out how to build once it knows language
+
+---
+
+# Exercise Part 1
+## Set up Travis CI
+
+* Fork the example repository
+* Log into https://travis-ci.org
+* Check that you can see your repository in the list
+* Activate Travis CI for your fork
+
+Note: Make sure you have the right Travis CI  
+  travis-ci.com is the paid for enterprise version
+
+---
+
+# Exercise Part 2
+## Configure your build
+
+* Add a `travis.yml` file to your repo
+* Push a change to the README.md file
+* Watch Travis clone your project and build it
+* Hopefully see your tests pass
+
+---
+
+# Exercise Part 3
+## Make it fail
+
+* Find the test which isn’t running
+* Make the test run (and fail)
+* Push your change
+* Watch it fail
+
+---
+
+# Exercise Part 4
+## Make it pass
+
+* Implement the code to make the test pass
+* Push your change
+* Watch it pass 🤞

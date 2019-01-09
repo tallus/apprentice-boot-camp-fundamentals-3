@@ -25,7 +25,7 @@ Several exercises (katas and code starters) will need to be ported to required l
 
 ## Prep-work for apprentices
 
-None
+* Make sure you can sign in to GitHub
 
 ### Follow-on tasks
 
