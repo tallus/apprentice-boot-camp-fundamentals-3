@@ -37,7 +37,8 @@ Organisation mentors should look to exercise the knowledge we’ve covered in th
 
 <!--- For end of boot camp: Signposting for apprentices self study, further learning, online resources, practice etc. --->
 
-* TBC
+* Five minute read: [Continuous Integration by ThoughtWorks](https://www.thoughtworks.com/continuous-integration)
+* Book: [Accelerate: The Science of Lean Software and Devops: Building and Scaling High Performing Technology Organizations](https://www.amazon.co.uk/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339) by Jez Humble
  
 ## Slides
 
