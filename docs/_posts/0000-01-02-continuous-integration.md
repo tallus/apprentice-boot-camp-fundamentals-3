@@ -4,7 +4,7 @@
 -[+] Why is it important?
 -[+] How do we do it?
 
-Note: Ask people what their understand is  
+Note: Ask people what they think it means  
 
 ---
 
