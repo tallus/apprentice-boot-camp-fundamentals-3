@@ -21,7 +21,9 @@
  
 Two–three mentors required in addition to leads. These should be able to cover support for the required languages.
 
-Several exercises (katas and code starters) will need to be ported to required languages.
+Exercises (katas and code starters) will need to be ported to required languages.
+
+Mentors should be comfortable with branching, feature toggles, setting up Travis for their chosen language.
 
 ## Prep-work for apprentices
 
@@ -41,7 +43,7 @@ Organisation mentors should look to exercise the knowledge we’ve covered in th
 * Book: [Accelerate: The Science of Lean Software and Devops: Building and Scaling High Performing Technology Organizations](https://www.amazon.co.uk/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339) by Jez Humble
 * [Feature Toggles](https://martinfowler.com/articles/feature-toggles.html) by Pete Hodgson at ThoughtWorks
 * [Knightmare: A DevOps Cautionary Tale](https://dougseven.com/2014/04/17/knightmare-a-devops-cautionary-tale/) about Knight Capital disaster
- 
+
 ## Slides
 
 The slides can be viewed from the link at the top of the repository.

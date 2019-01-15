@@ -154,12 +154,17 @@ Note: Just like the boy who cried wolf…
 
 # Good practices
 
--[+] When the build is broken, fix it (don’t make other changes)
--[+] Be aware of whether your code builds successfully (use notifications etc)
+-[+] Fix broken builds quickly (don’t commit over the top)
+  -[+] Be aware of failures—use notifications etc
 -[+] Don’t ‘commit & quit’
--[+] You broke it, you fix it
+-[+] You break it, you fix it
 -[+] Fix or delete flaky tests (don’t just re-run)
--[+] Make sure your build stays fast—5 minutes or less for some positive feedback
+-[+] Make sure your build stays fast
+-[+] Keep test environment ‘like production’
+
+Note: Some tests are unreliable—might fail 1% of the time.  
+  Fast means 5 minutes or less for some positive feedback.  
+  Test environment data is rarely comparible with production.  
 
 ---
 
@@ -189,6 +194,8 @@ How? …
 * GoCD
 * Jenkins
 * TravisCI
+
+Note: Moving landscape. GitHub should release their own version soon (Actions).  
 
 ---
 

@@ -116,7 +116,8 @@ Note: Unfinished work can block releasing urgent fixes
 -[+] Earlier visibility of problems
 
 Note: Kinder to testers—less context to remember.  
-  You will always miss things and release defects/have issues in production.    
+  You will always miss things and release defects/have issues in production.  
+  Canary deployments are a technique to derisk significant changes to production. 
 
 ---
 
@@ -124,6 +125,19 @@ What? ✅
 Why? ✅  
 How? …
 
+---
+
+<backgroundimage>https://staticshare.america.gov/uploads/2014/11/canary_art22-1068x479.jpg</backgroundimage>
+<backgroundimageopacity>0.25</backgroundimageopacity>
+
+# Canary deployments
+
+-[+] As in the canary in the coal mine
+-[+] Feature released to small number of test users
+-[+] Provides early warning sign
+-[+] Similar to A/B Testing
+
+<small>Image credit [State Department/Doug Thompson](https://share.america.gov/english-idiom-canary-coal-mine/)</small> 
 
 ---
 
@@ -231,17 +245,15 @@ Delete the branch… done.
 # Exercise
 ## Make two changes using branches
 
----
-
-# The case for trunk based development
-
----
-
-## Everyone works on ‘master’
+* Create two branches based on the same start point
+* Merge them back to master one by one and observe Travis inbetween
 
 ---
 
-## Changes regularly pushed back to origin
+## The case for trunk based development
+
+-[+] Everyone works on ‘master’
+-[+] Changes regularly pushed back to origin
 
 ---
 
@@ -263,29 +275,17 @@ AKA Feature Shields/Flags/Switches/Flippers
 
 ---
 
-<backgroundimage>https://staticshare.america.gov/uploads/2014/11/canary_art22-1068x479.jpg</backgroundimage>
-<backgroundimageopacity>0.25</backgroundimageopacity>
-
-# Canary deployments
-
--[+] As in the canary in the coal mine
--[+] Feature released to small number of test users
--[+] Provides early warning sign
--[+] Similar to A/B Testing
-
-<small>Image credit [State Department/Doug Thompson](https://share.america.gov/english-idiom-canary-coal-mine/)</small>
-
----
-
 ## Continuous Integration
 
--[+] Since developing on trunk, changes picked up by CI system
+-[+] Changes to trunk picked up by CI system
 -[+] You *can* toggle features on per environment or per test
 -[+] If you do, feature is tested on each push
 -[+] Increased complexity—introduces a new code path
 -[+] May need to run tests with multiple toggle combinations
 
-Note: Feature branching address complexity issue as it is not possible to test integrated work in progress.
+Note: It is possible to do CI with branches but few do and there can be issues.
+  Features promoted or new builds toggle per environment.  
+  Feature branches don’t address complexity—can’t test integrated WIP.
 
 ---
 
@@ -310,31 +310,34 @@ Taken from [Feature Toggles (aka Feature Flags)](https://martinfowler.com/articl
 
 # Tidying Up
 
-Added code to achieve this so we need to remove feature toggles once functionality fully released
+Code was added to implement feature toggles so we need to tidy this away once functionality fully released
 
 ---
 
 # A cautionary tale
 
-https://dougseven.com/2014/04/17/knightmare-a-devops-cautionary-tale/
+[Knightmare: A DevOps Cautionary Tale](https://dougseven.com/2014/04/17/knightmare-a-devops-cautionary-tale/)
 
 -[+] Knight Capital, $365 in assets
 -[+] Incomplete deployment
 -[+] Reused feature toggle
 -[+] Reverted code change but left toggle on
--[+] $460 million loss over in 45 minutes
+-[+] $460 million loss over in 45 minutes—bankrupt!
 
 Note: Market saw problem in by 09:31—one minute after opening  
-  One server (of eight) had failed deployment  
-  Old code ran linked to reused toggle  
+  One server (of eight) had failed deployment and was running older code deactivated by now reused toggle  
   No kill switch  
-  Back out left resulted in eight bad servers—4 million transactions  
+  Back out left resulted in eight bad servers—4 million transactions
 
 ---
 
 # Exercise
 ## Make two changes using trunk based development
 
+---
+
+# Checkpoint
+## 
 
 ---
 
