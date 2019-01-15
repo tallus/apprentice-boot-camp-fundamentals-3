@@ -252,8 +252,7 @@ Note: Travis looks at repo to work out how to build once it knows language
 
 ---
 
-# Exercise Part 1
-## Set up Travis CI
+## Exercise Part 1: Set up Travis CI
 
 * Fork the example repository
 * Log into https://travis-ci.org
@@ -265,18 +264,32 @@ Note: Make sure you have the right Travis CI
 
 ---
 
-# Exercise Part 2
-## Configure your build
+## Exercise Part 2: Configure your build
 
 * Add a `travis.yml` file to your repo
-* Push a change to the README.md file
-* Watch Travis clone your project and build it
+* Push change to `README.md` & watch Travis build
 * Hopefully see your tests pass
+
+```yaml
+language: java
+```
+
+```yaml
+language: csharp
+solution: solution-name.sln
+```
+
+```yaml
+language: python
+  python:
+    - "3.6"
+  script:
+    - pytest
+```
 
 ---
 
-# Exercise Part 3
-## Make it fail
+## Exercise Part 3: Make it fail
 
 * Find the test which isn’t running
 * Make the test run (and fail)
@@ -285,8 +298,7 @@ Note: Make sure you have the right Travis CI
 
 ---
 
-# Exercise Part 4
-## Make it pass
+## Exercise Part 4: Make it pass
 
 * Implement the code to make the test pass
 * Push your change

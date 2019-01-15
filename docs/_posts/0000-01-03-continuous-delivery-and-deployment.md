@@ -112,7 +112,7 @@ Note: Unfinished work can block releasing urgent fixes
 # Smaller deployments
 
 -[+] Less to test
--[+] Less suspects when investigating issues
+-[+] Fewer suspects when investigating issues
 -[+] Earlier visibility of problems
 
 Note: Kinder to testers—less context to remember.  
@@ -267,9 +267,9 @@ Users are shielded from work-in-progress using Feature Toggles
 
 AKA Feature Shields/Flags/Switches/Flippers
 
+-[+] Basically conditionals to activate/deactivate bits of code/user interfaces
 -[+] May be toggled on and off per environment using configuration
 -[+] Prevent features taking action in production environments
--[+] Basically conditionals to activate/deactivate bits of code/user interfaces
 
 (see Further Reading for a good [Feature Toggles article](https://martinfowler.com/articles/feature-toggles.html))
 
