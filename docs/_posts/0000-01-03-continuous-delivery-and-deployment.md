@@ -237,7 +237,7 @@ Delete the branch… done.
 
 ---
 
-## Everyone works on `master`
+## Everyone works on ‘master’
 
 ---
 
@@ -245,29 +245,116 @@ Delete the branch… done.
 
 ---
 
-## WIP protected using feature shields
+## Handling multiple changes in progress
 
--[+] Shield prevents feature taking action in production
--[+] Sometimes toggled on and off per environment
--[+] Basically conditionals to activate / deactivate bits of code
+Users are shielded from work-in-progress using Feature Toggles
 
 ---
 
-# Dark deployments 
+# Feature Toggles
+
+AKA Feature Shields/Flags/Switches/Flippers
+
+-[+] May be toggled on and off per environment using configuration
+-[+] Prevent features taking action in production environments
+-[+] Basically conditionals to activate/deactivate bits of code/user interfaces
+
+(see Further Reading for a good [Feature Toggles article](https://martinfowler.com/articles/feature-toggles.html))
+
+---
+
+<backgroundimage>https://staticshare.america.gov/uploads/2014/11/canary_art22-1068x479.jpg</backgroundimage>
+<backgroundimageopacity>0.25</backgroundimageopacity>
+
+# Canary deployments
+
+-[+] As in the canary in the coal mine
+-[+] Feature released to small number of test users
+-[+] Provides early warning sign
+-[+] Similar to A/B Testing
+
+<small>Image credit [State Department/Doug Thompson](https://share.america.gov/english-idiom-canary-coal-mine/)</small>
+
+---
+
+## Continuous Integration
+
+-[+] Since developing on trunk, changes picked up by CI system
+-[+] You *can* toggle features on per environment or per test
+-[+] If you do, feature is tested on each push
+-[+] Increased complexity—introduces a new code path
+-[+] May need to run tests with multiple toggle combinations
+
+Note: Feature branching address complexity issue as it is not possible to test integrated work in progress.
+
+---
+
+## Implementing a Feature Toggle
+
+```javascript
+  const features = fetchFeatureTogglesFromSomewhere();
+
+  function generateInvoiceEmail(){
+    const baseEmail = buildEmailForInvoice(this.invoice);
+    if( features.isEnabled("next-gen-ecomm") ){ 
+      return addOrderCancellationContentToEmail(baseEmail);
+    }else{
+      return baseEmail;
+    }
+  }
+```
+
+Taken from [Feature Toggles (aka Feature Flags)](https://martinfowler.com/articles/feature-toggles.html)
 
 ---
 
 # Tidying Up
 
-* Need to remove feature shields once functionality released
+Added code to achieve this so we need to remove feature toggles once functionality fully released
 
 ---
 
 # A cautionary tale
 
-(Story about banking incident where feature shield caused massive losses)
+https://dougseven.com/2014/04/17/knightmare-a-devops-cautionary-tale/
+
+-[+] Knight Capital, $365 in assets
+-[+] Incomplete deployment
+-[+] Reused feature toggle
+-[+] Reverted code change but left toggle on
+-[+] $460 million loss over in 45 minutes
+
+Note: Market saw problem in by 09:31—one minute after opening  
+  One server (of eight) had failed deployment  
+  Old code ran linked to reused toggle  
+  No kill switch  
+  Back out left resulted in eight bad servers—4 million transactions  
 
 ---
 
 # Exercise
 ## Make two changes using trunk based development
+
+
+---
+
+Summary
+
+---
+
+## Pros of Feature Branching
+
+-[+] Once feature released, clean up as simple as deleting the branch
+-[+] If feature abandoned, unused code not left polluting master
+-[+] No need to deal with pesky conflicts while developing
+-[+] Scales well with large number of features in progress
+
+---
+
+## Pros of Trunk Development
+
+-[+] Changes visible to whole team throughout feature development
+-[+] Code review regular rather than large and unpalatable
+-[+] Feature can be tested on each push
+-[+] Potentially earlier visibility of quality regressions
+-[+] No big, scary merge at the end

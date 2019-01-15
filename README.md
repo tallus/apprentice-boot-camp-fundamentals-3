@@ -39,6 +39,8 @@ Organisation mentors should look to exercise the knowledge we’ve covered in th
 
 * Five minute read: [Continuous Integration by ThoughtWorks](https://www.thoughtworks.com/continuous-integration)
 * Book: [Accelerate: The Science of Lean Software and Devops: Building and Scaling High Performing Technology Organizations](https://www.amazon.co.uk/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339) by Jez Humble
+* [Feature Toggles](https://martinfowler.com/articles/feature-toggles.html) by Pete Hodgson at ThoughtWorks
+* [Knightmare: A DevOps Cautionary Tale](https://dougseven.com/2014/04/17/knightmare-a-devops-cautionary-tale/) about Knight Capital disaster
  
 ## Slides
 
