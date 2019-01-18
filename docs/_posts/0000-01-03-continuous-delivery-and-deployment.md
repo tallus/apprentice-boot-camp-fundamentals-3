@@ -242,6 +242,30 @@ Delete the branch… done.
 
 ---
 
+# A prophecy...
+
+<iframe src="https://player.vimeo.com/video/60788996" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/60788996">GIT IS HARD</a> from <a href="https://vimeo.com/owltastic">Meagan Fisher</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+Note:
+We're going to do some exercises involving branching, git is a very powerful tool, it's possible to get things VERY wrong.
+
+---
+
+<img width="500px" src="images/guitar_hero.png">
+
+Note:
+Branches can easily get out of control, they should be few in number and short-lived - you have been warned.
+
+---
+
+<img style="border:0;box-shadow:none;background-color:transparent" src="images/aliens.png">
+
+Note:
+I'm increasingly of the opinion that there is only one real explanation for how git works, and that is that it is alien technology ;-)
+
+---
+
 # Exercise
 ## Make two changes using branches
 

@@ -252,6 +252,14 @@ Note: Travis looks at repo to work out how to build once it knows language
 
 ---
 
+## Ground-rules for exercises
+
+* ___***DO NOT CHANGE***___ ```DummyTaxCalculator``` - write your own implementation
+* Try to ___***KEEP YOUR BUILD GREEN***___
+* ___***DO NOT***___ change the tests
+
+---
+
 ## Exercise Part 1: Set up Travis CI
 
 * Work in pairs
@@ -302,6 +310,6 @@ language: python
 
 ## Exercise Part 4: Make it pass
 
-* Implement the code to make the test pass - (see Story 1)
+* Implement the code to make the tests pass - (see Story 1)
 * Push your change
 * Watch it pass 🤞
