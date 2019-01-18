@@ -254,7 +254,8 @@ Note: Travis looks at repo to work out how to build once it knows language
 
 ## Exercise Part 1: Set up Travis CI
 
-* Fork the example repository
+* Work in pairs
+* Fork the example repository https://github.com/MCR-Digital/tax_calculator.git
 * Log into https://travis-ci.org
 * Check that you can see your repository in the list
 * Activate Travis CI for your fork
@@ -272,6 +273,7 @@ Note: Make sure you have the right Travis CI
 
 ```yaml
 language: java
+before_script: cd exercises/java
 ```
 
 ```yaml
@@ -291,8 +293,8 @@ language: python
 
 ## Exercise Part 3: Make it fail
 
-* Find the test which isn’t running
-* Make the test run (and fail)
+* Find the tests which aren't running (the ones for petrol vehicles)
+* Make the tests run (and fail)
 * Push your change
 * Watch it fail
 
@@ -300,6 +302,6 @@ language: python
 
 ## Exercise Part 4: Make it pass
 
-* Implement the code to make the test pass
+* Implement the code to make the test pass - (see Story 1)
 * Push your change
 * Watch it pass 🤞
