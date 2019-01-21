@@ -233,6 +233,7 @@ Note: Moving landscape. GitHub should release their own version soon (Actions).
 
 ```yaml
 language: java
+before_script: cd exercises/java
 ```
 
 ```yaml
