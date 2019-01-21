@@ -237,7 +237,13 @@ language: java
 
 ```yaml
 language: csharp
-solution: solution-name.sln
+solution: exercises/dotnet/TaxCalculator.sln
+before_script: cd exercises/dotnet
+mono: none
+dotnet: 2.1.502
+script:
+ - dotnet restore
+ - dotnet test
 ```
 
 ```yaml
