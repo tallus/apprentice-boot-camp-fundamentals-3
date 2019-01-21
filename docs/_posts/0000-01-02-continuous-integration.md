@@ -215,7 +215,7 @@ Note: Moving landscape. GitHub should release their own version soon (Actions).
 
 -[+] Authorise Travis CI to use your github.com account
 -[+] Activate Travis CI with your repository
--[+] Add a `travis.yml` file to your repository
+-[+] Add a `.travis.yml` file to your repository
 -[+] Optional: add build badge to the repository
 
 ---
@@ -224,12 +224,12 @@ Note: Moving landscape. GitHub should release their own version soon (Actions).
 
 -[+] GitHub tells Travis CI each time there is something to fetch and build
 -[+] Travis fetches that version of the code
--[+] Travis works out what to run based on repository contents (including `travis.yml`)
+-[+] Travis works out what to run based on repository contents (including `.travis.yml`)
 -[+] Travis reports status back to GitHub to mark commits with success/failure
 
 ---
 
-`travis.yml`:
+`.travis.yml`:
 
 ```yaml
 language: java
@@ -289,13 +289,12 @@ Note: Make sure you have the right Travis CI
 
 ## Exercise Part 2: Configure your build
 
-* Add a `travis.yml` file to your repo
+* Add a `.travis.yml` file to your repo
 * Push change to `README.md` & watch Travis build
 * Hopefully see your tests pass
 
 ```yaml
 language: java
-before_script: cd exercises/java
 ```
 
 ```yaml
