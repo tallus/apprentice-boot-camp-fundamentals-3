@@ -249,10 +249,11 @@ script:
 
 ```yaml
 language: python
-  python:
-    - "3.6"
-  script:
-    - pytest
+before_script: cd exercises/python
+python:
+- "3.6"
+script:
+- pytest
 ```
 
 Note: Travis looks at repo to work out how to build once it knows language
