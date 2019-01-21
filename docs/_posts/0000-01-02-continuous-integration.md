@@ -260,6 +260,12 @@ Note: Travis looks at repo to work out how to build once it knows language
 
 ---
 
+### Caution: Git
+
+<img src="https://imgs.xkcd.com/comics/git.png">
+
+---
+
 ## Exercise Part 1: Set up Travis CI
 
 * Work in pairs
@@ -313,3 +319,5 @@ language: python
 * Implement the code to make the tests pass - (see Story 1)
 * Push your change
 * Watch it pass 🤞
+
+Note: Did you get an email telling you it had failed?

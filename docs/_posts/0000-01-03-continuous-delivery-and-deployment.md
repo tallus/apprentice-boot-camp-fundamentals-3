@@ -282,10 +282,34 @@ There are already test suites for these stories they just need to be enabled so 
 
 ---
 
+# Reflection
+
+* What happened?
+* Did you have any failed builds? If so, why?
+* Did your changes conflict?
+
+Note: These were very small changes.  
+  Some changes last days… weeks…
+
+---
+
+<img src="images/merge.png">
+
+Note: Created two branches  
+  Merged diesel into master  
+  Merged master into alternate  
+  Merged alternate into master  
+
+---
+
 ## The case for trunk based development
 
+-[+] No one likes merging
 -[+] Everyone works on ‘master’
 -[+] Changes regularly pushed back to origin
+
+Note: Reminder: opinion follows  
+  Still get conflicts but they are incremental, allowing you to change your approach—possibly backing off from changing conflicting areas.  
 
 ---
 
@@ -309,13 +333,13 @@ AKA Feature Shields/Flags/Switches/Flippers
 
 ## Continuous Integration
 
--[+] Changes to trunk picked up by CI system
+-[+] Changes to trunk always picked up by CI system
 -[+] You *can* toggle features on per environment or per test
 -[+] If you do, feature is tested on each push
 -[+] Increased complexity—introduces a new code path
 -[+] May need to run tests with multiple toggle combinations
 
-Note: It is possible to do CI with branches but few do and there can be issues.
+Note: It is possible to do CI with branches but some organisations typical build process or CI tooling means they don’t.  
   Features promoted or new builds toggle per environment.  
   Feature branches don’t address complexity—can’t test integrated WIP.
 
