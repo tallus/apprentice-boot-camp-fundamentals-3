@@ -1,5 +1,7 @@
 # Continuous Integration
 
+Structure:
+
 -[+] What is it?
 -[+] Why is it important?
 -[+] How do we do it?
@@ -13,21 +15,21 @@ Note: Ask people what they think it means
 > By integrating regularly, you can detect errors quickly, and locate them more easily.”  
 > —<cite>[ThoughtWorks](https://www.thoughtworks.com/continuous-integration)</cite>
 
----
+--
 
 > … integrate code into a shared repository …
 
 Note: Integration of many developers code.  
   Shared repository meaning something like Git.  
 
----
+--
 
 > … several times a day …
 
 Note: could be every five minutes, could be every two hours.  
   Not every three days.  
 
----
+--
 
 > … verified by an automated build …
 
@@ -35,7 +37,7 @@ Note: verification may mean running something, testing something, or running too
   Automated for consistency.  
   Ideally the build process is repeatable.  
 
----
+--
 
 > … detect errors quickly, and locate them more easily …
 
@@ -56,13 +58,13 @@ Note: Why is it good to detect quickly?
 
 Note: Used to be a very common phrase.  
 
----
+--
 
 # There was a time before automated tests…
 
 We had to wait months for things to be tested
 
----
+--
 
 # But then…
 
@@ -73,14 +75,14 @@ We had to wait months for things to be tested
 
 > Gilfoyle, did you break the build?  
 
----
+--
 
 <backgroundimage>https://m.media-amazon.com/images/M/MV5BMTk3NzAyMjY0OF5BMl5BanBnXkFtZTgwNDQ4MTUxNTE@._V1_SY1000_SX1500_AL_.jpg</backgroundimage>
 <backgroundimageopacity>0.25</backgroundimageopacity>
 
 > No, Dinesh… I did not.  
 
----
+--
 
 <backgroundimage>https://m.media-amazon.com/images/M/MV5BN2IzYjhlOTUtMDVmMy00NTk3LTkxNjAtNDZmYjFhNzY3OWJlXkEyXkFqcGdeQXVyNjc5Mjg0NjU@._V1_SY1000_SX1500_AL_.jpg</backgroundimage>
 <backgroundimageopacity>0.25</backgroundimageopacity>
@@ -88,14 +90,14 @@ We had to wait months for things to be tested
 > [delay]  
 > Are you sure? The tests are failing/code doesn’t compile.  
 
----
+--
 
 <backgroundimage>https://m.media-amazon.com/images/M/MV5BMTk3NzAyMjY0OF5BMl5BanBnXkFtZTgwNDQ4MTUxNTE@._V1_SY1000_SX1500_AL_.jpg</backgroundimage>
 <backgroundimageopacity>0.25</backgroundimageopacity>
 
 > Yep. Works on my machine. It’s probably user error.  
 
----
+--
 
 <backgroundimage>https://m.media-amazon.com/images/M/MV5BN2IzYjhlOTUtMDVmMy00NTk3LTkxNjAtNDZmYjFhNzY3OWJlXkEyXkFqcGdeQXVyNjc5Mjg0NjU@._V1_SY1000_SX1500_AL_.jpg</backgroundimage>
 <backgroundimageopacity>0.25</backgroundimageopacity>
@@ -105,7 +107,7 @@ We had to wait months for things to be tested
 > /    
 > Where is `Gilfoyle.java`?  
 
----
+--
 
 <backgroundimage>https://m.media-amazon.com/images/M/MV5BMTk3NzAyMjY0OF5BMl5BanBnXkFtZTgwNDQ4MTUxNTE@._V1_SY1000_SX1500_AL_.jpg</backgroundimage>
 <backgroundimageopacity>0.25</backgroundimageopacity>
@@ -113,7 +115,7 @@ We had to wait months for things to be tested
 > [delay while Gilfoyle eats lunch]
 > Try it again.  
 
----
+--
 
 <backgroundimage>https://m.media-amazon.com/images/M/MV5BN2IzYjhlOTUtMDVmMy00NTk3LTkxNjAtNDZmYjFhNzY3OWJlXkEyXkFqcGdeQXVyNjc5Mjg0NjU@._V1_SY1000_SX1500_AL_.jpg</backgroundimage>
 <backgroundimageopacity>0.25</backgroundimageopacity>
@@ -218,7 +220,7 @@ Note: Moving landscape. GitHub should release their own version soon (Actions).
 -[+] Add a `.travis.yml` file to your repository
 -[+] Optional: add build badge to the repository
 
----
+--
 
 # Then…
 
@@ -227,7 +229,7 @@ Note: Moving landscape. GitHub should release their own version soon (Actions).
 -[+] Travis works out what to run based on repository contents (including `.travis.yml`)
 -[+] Travis reports status back to GitHub to mark commits with success/failure
 
----
+--
 
 ## Configuring Travis
 
@@ -257,7 +259,7 @@ Note: Travis looks at repo to work out how to build once it knows language.
   * Java folk: import the `exercises/java` directory using ‘Import project from external model’
   * Choose ‘Use default gradle wrapper (recommended)’
 
----
+--
 
 ## Exercise Part 1: Set up Travis CI
 
@@ -270,7 +272,7 @@ Note: Travis looks at repo to work out how to build once it knows language.
 Note: Make sure you have the right Travis CI  
   travis-ci.com is the paid for enterprise version
 
----
+--
 
 #### Exercise Part 2: Configure your build
 
@@ -302,7 +304,7 @@ script:
   - pytest
 ```
 
----
+--
 
 ## Exercise Part 3: Make it fail
 
@@ -311,7 +313,7 @@ script:
 * Push your change
 * Watch it fail
 
----
+--
 
 ## Exercise Part 4: Make it pass
 

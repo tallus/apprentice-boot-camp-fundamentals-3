@@ -1,36 +1,38 @@
 ## Continuous Delivery & Deployment
-### Structure
+
+Structure:
 
 -[+] What is it?
 -[+] Why is it important?
 -[+] How do we do it?
 
-Note: Ask people what they think it means  
+Note: Laptops closed.  
+  Ask people what they think it means  
 
 ---
 
 > “Continuous delivery … is a software engineering approach in which teams produce software in short cycles, ensuring that the software can be reliably released at any time and, when releasing the software, doing so manually. It aims at building, testing, and releasing software with greater speed and frequency  
 > …
 
----
+--
 
 > “…  
 > The approach helps reduce the cost, time, and risk of delivering changes by allowing for more incremental updates to applications in production. A straightforward and repeatable deployment process is important for continuous delivery.  
 > …”
 
----
+--
 
 > “CD contrasts with continuous deployment, a similar approach in which software is also produced in short cycles but through automated deployments rather than manual ones.”  
 > —<cite>[Wikipedia](https://en.wikipedia.org/wiki/Continuous_delivery)</cite>
 
----
+--
 
 > … teams produce software in short cycles …
 
 Note: Just like our CI definition says several times a day…  
   Could be every five minutes, could be every two hours.  
 
----
+--
 
 > … ensuring that the software can be reliably released at any time …
 
@@ -41,7 +43,7 @@ Note: At any time means when code is pushed.
   Features should be complete or hidden  
   Going to focus on this  
 
----
+--
 
 > … when releasing the software, doing so manually …
 
@@ -72,35 +74,35 @@ Note: Unfinished work can block releasing urgent fixes
 
 > Dinesh, did you deploy?  
 
----
+--
 
 <backgroundimage>https://m.media-amazon.com/images/M/MV5BN2IzYjhlOTUtMDVmMy00NTk3LTkxNjAtNDZmYjFhNzY3OWJlXkEyXkFqcGdeQXVyNjc5Mjg0NjU@._V1_SY1000_SX1500_AL_.jpg</backgroundimage>
 <backgroundimageopacity>0.25</backgroundimageopacity>
 
 > Yeah, there were some performance improvements waiting.  
 
----
+--
 
 <backgroundimage>https://m.media-amazon.com/images/M/MV5BMTk3NzAyMjY0OF5BMl5BanBnXkFtZTgwNDQ4MTUxNTE@._V1_SY1000_SX1500_AL_.jpg</backgroundimage>
 <backgroundimageopacity>0.25</backgroundimageopacity>
 
 > Did you look at what you were releasing?  
 
----
+--
 
 <backgroundimage>https://m.media-amazon.com/images/M/MV5BN2IzYjhlOTUtMDVmMy00NTk3LTkxNjAtNDZmYjFhNzY3OWJlXkEyXkFqcGdeQXVyNjc5Mjg0NjU@._V1_SY1000_SX1500_AL_.jpg</backgroundimage>
 <backgroundimageopacity>0.25</backgroundimageopacity>
 
 > Yeah… you had a commit saying you were making changes to the login process.
 
----
+--
 
 <backgroundimage>https://m.media-amazon.com/images/M/MV5BMTk3NzAyMjY0OF5BMl5BanBnXkFtZTgwNDQ4MTUxNTE@._V1_SY1000_SX1500_AL_.jpg</backgroundimage>
 <backgroundimageopacity>0.25</backgroundimageopacity>
 
 > That’s right. Making changes. So far all I’ve done is remove the old process.
 
----
+--
 
 <backgroundimage>https://m.media-amazon.com/images/M/MV5BN2IzYjhlOTUtMDVmMy00NTk3LTkxNjAtNDZmYjFhNzY3OWJlXkEyXkFqcGdeQXVyNjc5Mjg0NjU@._V1_SY1000_SX1500_AL_.jpg</backgroundimage>
 <backgroundimageopacity>0.25</backgroundimageopacity>
@@ -115,9 +117,7 @@ Note: Unfinished work can block releasing urgent fixes
 -[+] Fewer suspects when investigating issues
 -[+] Earlier visibility of problems
 
-Note: Kinder to testers—less context to remember.  
-  You will always miss things and release defects/have issues in production.  
-  Canary deployments are a technique to derisk significant changes to production. 
+Note: Kinder to testers—less context to remember.   
 
 ---
 
@@ -139,6 +139,10 @@ How? …
 
 <small>Image credit [State Department/Doug Thompson](https://share.america.gov/english-idiom-canary-coal-mine/)</small> 
 
+Note: 
+  You will always miss things and release defects/have issues in production.  
+  Canary deployments are a technique to derisk significant changes to production.
+
 ---
 
 # How?
@@ -148,18 +152,21 @@ How? …
 -[+] As usual this is a subjective issue
 -[+] Each has pros and cons 
 
----
-
-# The case for branching
-
----
+--
 
 # What is a branch?
 
 -[+] Formed when two commits have the same parent
 -[+] Commits made against the branch your working copy points to
 
----
+--
+
+# What is trunk?
+
+-[+] Trunk is another term for master
+-[+] It is a special branch
+
+--
 
 # What is a working copy?
 
@@ -168,6 +175,10 @@ How? …
 -[+] The copy can consist of multiple branches
 
 ---
+
+# The case for branching
+
+--
 
 ## Feature Branch Workflow
 
@@ -195,7 +206,7 @@ git checkout -b marys-feature master
 
 `*` Shamelessly borrowed from [Atlassian](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow)
 
----
+--
 
 ### Mary goes to lunch
 
@@ -205,7 +216,7 @@ git checkout -b marys-feature master
 git push -u origin marys-feature
 ```
 
----
+--
 
 ### Mary finishes her feature
 
@@ -215,13 +226,13 @@ git push -u origin marys-feature
 git push
 ```
 
----
+--
 
 ### Bill receives the pull request
 
 <img src="https://wac-cdn.atlassian.com/dam/jcr:2119c2a3-7dff-43ad-bf98-77672d93242f/05%20(1).svg?cdnVersion=ks">
 
----
+--
 
 ### Mary publishes her feature
 
@@ -234,7 +245,7 @@ git pull origin marys-feature
 git push
 ```
 
----
+--
 
 # Afterwards
 
@@ -250,14 +261,14 @@ Delete the branch… done.
 Note:
 We're going to do some exercises involving branching, git is a very powerful tool, it's possible to get things VERY wrong.
 
----
+--
 
 <img width="500px" src="images/guitar_hero.png">
 
 Note:
 Branches can easily get out of control, they should be few in number and short-lived - you have been warned.
 
----
+--
 
 <img style="border:0;box-shadow:none;background-color:transparent" src="images/aliens.png">
 
@@ -282,7 +293,7 @@ See branch ```petrol_tax``` for a starting point to this exercise if they haven'
 N.B. don't get them to checkout the branch (git weirdness will ensue), just get them to copy-paste the working code.
 There are already test suites for these stories they just need to be enabled so the build runs them.
 
----
+--
 
 # Reflection
 
@@ -290,10 +301,11 @@ There are already test suites for these stories they just need to be enabled so 
 * Did you have any failed builds? If so, why?
 * Did your changes conflict?
 
-Note: These were very small changes.  
+Note: Laptops closed.  
+  These were very small changes.  
   Some changes last days… weeks…
 
----
+--
 
 <img src="images/merge.png">
 
@@ -319,27 +331,20 @@ Note: Git Flow: another branch based workflow
 Note: Reminder: opinion follows  
   Still get conflicts but they are incremental, allowing you to change your approach—possibly backing off from changing conflicting areas.  
 
----
+--
 
 ## Handling multiple changes in progress
 
-Users are shielded from work-in-progress using Feature Toggles
-
----
-
-# Feature Toggles
-
-AKA Feature Shields/Flags/Switches/Flippers
-
--[+] Basically conditionals to activate/deactivate bits of code/user interfaces
--[+] May be toggled on and off per environment using configuration
--[+] Prevent features taking action in production environments
+-[+] Feature Toggles hide incomplete features in production
+-[+] AKA Feature Shields/Flags/Switches/Flippers
+-[+] Conditionals around bits of code/user interfaces
+-[+] May be toggled on and off per environment
 
 (see Further Reading for a good [Feature Toggles article](https://martinfowler.com/articles/feature-toggles.html))
 
----
+--
 
-## Continuous Integration
+## Trunk Development + CI == 👍
 
 -[+] Changes to trunk always picked up by CI system
 -[+] You *can* toggle features on per environment or per test
@@ -370,7 +375,7 @@ Note: It is possible to do CI with branches but some organisations typical build
 
 Taken from [Feature Toggles (aka Feature Flags)](https://martinfowler.com/articles/feature-toggles.html)
 
----
+--
 
 # Tidying Up
 
@@ -382,16 +387,44 @@ Code was added to implement feature toggles so we need to tidy this away once fu
 
 [Knightmare: A DevOps Cautionary Tale](https://dougseven.com/2014/04/17/knightmare-a-devops-cautionary-tale/)
 
--[+] Knight Capital, $365 in assets
--[+] Incomplete deployment
--[+] Reused feature toggle
--[+] Reverted code change but left toggle on
--[+] $460 million loss over in 45 minutes—bankrupt!
+--
 
-Note: Market saw problem in by 09:31—one minute after opening  
+## Knight Capital (traders) had $365M in assets
+
+--
+
+## New feature Reused feature toggle
+
+--
+
+## Deployment of new feature was incomplete
+
+Note:   
   One server (of eight) had failed deployment and was running older code deactivated by now reused toggle  
+
+--
+
+## 09:30 Market opens
+
+<fragment/> (09:31 Market panics)
+
+Note: Market saw problem in by 09:31—one minute after opening
   No kill switch  
+
+--
+
+## Deployment backed out
+
+(toggle left on)
+
+Note:   
   Back out left resulted in eight bad servers—4 million transactions
+
+--
+
+## $460 million loss over in 45 minutes
+
+Bankrupt!
 
 ---
 
@@ -423,7 +456,10 @@ Summary
 * Trunk based development explanation and exercise
 * Other workflows are available
 
----
+Notes:   
+  Laptops closed.
+
+--
 
 ## Pros of Feature Branching
 
@@ -432,7 +468,7 @@ Summary
 -[+] No need to deal with pesky conflicts while developing
 -[+] Scales well with large number of features in progress
 
----
+--
 
 ## Pros of Trunk Development
 
@@ -441,4 +477,3 @@ Summary
 -[+] Feature can be tested on each push
 -[+] Potentially earlier visibility of quality regressions
 -[+] No big, scary merge at the end
-
