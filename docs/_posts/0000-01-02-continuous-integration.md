@@ -229,34 +229,17 @@ Note: Moving landscape. GitHub should release their own version soon (Actions).
 
 ---
 
-`.travis.yml`:
+## Configuring Travis
+
+* Contents of `.travis.yml` tells Travis what to do
+* Specific to each language… e.g.
 
 ```yaml
 language: java
-before_script: cd exercises/java
 ```
 
-```yaml
-language: csharp
-solution: exercises/dotnet/TaxCalculator.sln
-before_script: cd exercises/dotnet
-mono: none
-dotnet: 2.1.502
-script:
- - dotnet restore
- - dotnet test
-```
-
-```yaml
-language: python
-before_script: cd exercises/python
-python:
-- "3.6"
-script:
-- pytest
-```
-
-Note: Travis looks at repo to work out how to build once it knows language
+Note: Travis looks at repo to work out how to build once it knows language.  
+  One line is enough to build and validate your Java.  
 
 ---
 
@@ -289,27 +272,34 @@ Note: Make sure you have the right Travis CI
 
 ---
 
-## Exercise Part 2: Configure your build
+#### Exercise Part 2: Configure your build
 
-* From github.com, add a `.travis.yml` file to the root of your repo
-* Push change to `README.md` & watch Travis build
+* On GitHub, create `.travis.yml` at root of repo
 * Hopefully see your tests pass
 
 ```yaml
 language: java
+before_script: "cd exercises/java"
 ```
 
 ```yaml
 language: csharp
-solution: solution-name.sln
+solution: exercises/dotnet/TaxCalculator.sln
+before_script: "cd exercises/dotnet"
+mono: none
+dotnet: "2.1.502"
+script: 
+  - "dotnet restore"
+  - "dotnet test"
 ```
 
 ```yaml
 language: python
-  python:
-    - "3.6"
-  script:
-    - pytest
+before_script: "cd exercises/python"
+python: 
+  - "3.6"
+script: 
+  - pytest
 ```
 
 ---
