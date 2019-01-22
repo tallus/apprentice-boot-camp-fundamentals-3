@@ -51,12 +51,9 @@ The slides can be viewed from the link at the top of the repository.
 
 ## Exercises
 
-* TBC
-<!--- 
-* Setting up CI?
-* Branching and creating Pull Requests?
-* Resolving, tracing, telneting?
----> 
+* Setting up Travis CI, changing tax_calculator & watching Travis fail/pass
+* Changing tax_calculator using feature branches
+* Changing tax_calculator using trunk development and feature toggles
 
 # Boot Camp Summary
 
