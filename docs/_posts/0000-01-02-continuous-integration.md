@@ -260,17 +260,19 @@ Note: Travis looks at repo to work out how to build once it knows language
 
 ---
 
-## Ground-rules for exercises
-
-* ___***DO NOT CHANGE***___ ```DummyTaxCalculator``` - write your own implementation
-* Try to ___***KEEP YOUR BUILD GREEN***___
-* ___***DO NOT***___ change the tests
-
----
-
 ### Caution: Git
 
 <img src="https://imgs.xkcd.com/comics/git.png">
+
+---
+
+# Exercise prep
+
+* Go to https://github.com/MCR-Digital/tax_calculator and fork it
+* `git clone https://github.com/[YOURUSERNAME]/tax_calculator.git`
+* Make sure you can run tests in your language (they are all ignored)
+  * Java folk: import the `exercises/java` directory using ‘Import project from external model’
+  * Choose ‘Use default gradle wrapper (recommended)’
 
 ---
 
@@ -289,7 +291,7 @@ Note: Make sure you have the right Travis CI
 
 ## Exercise Part 2: Configure your build
 
-* Add a `.travis.yml` file to your repo
+* From github.com, add a `.travis.yml` file to the root of your repo
 * Push change to `README.md` & watch Travis build
 * Hopefully see your tests pass
 
@@ -323,7 +325,10 @@ language: python
 
 ## Exercise Part 4: Make it pass
 
-* Implement the code to make the tests pass - (see Story 1)
+* Implement code to make the tests pass (see Story 1)
+* ___***Do not change ‘DummyTaxCalculator’***___—write your own implementation (e.g. ‘DefaultTaxCalculator’)
+* Try to ___***keep your build green***___
+* ___***Do not change the tests***___ (except to introduce your new calculator)
 * Push your change
 * Watch it pass 🤞
 

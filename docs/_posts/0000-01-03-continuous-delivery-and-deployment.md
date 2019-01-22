@@ -266,14 +266,16 @@ I'm increasingly of the opinion that there is only one real explanation for how 
 
 ---
 
-# Exercise
-## Make two changes using branches
+### Exercise: Make two changes using branches
 
-* Work in pairs - ___***sharing the same git repository***___
+* Work in pairs, ___***share the same git repository***___
 * Create two branches based on the same start point
+  * `git checkout -b branch_to_create`
 * One person implements Story 2 - Diesel vehicles
 * One person implements Story 3 - Alternative fuel vehicles
-* Merge them back to master one by one and observe Travis inbetween
+* Add to your TaxCalculator implementation
+* Merge branches back to master one by one (observe Travis in between)
+
 
 Notes:
 See branch ```petrol_tax``` for a starting point to this exercise if they haven't completed the previous one.
@@ -299,6 +301,12 @@ Note: Created two branches
   Merged diesel into master  
   Merged master into alternate  
   Merged alternate into master  
+
+---
+
+<img height="600" src="https://wac-cdn.atlassian.com/dam/jcr:61ccc620-5249-4338-be66-94d563f2843c/05%20(2).svg?cdnVersion=kv">
+
+Note: Git Flow: another branch based workflow
 
 ---
 
@@ -394,7 +402,8 @@ Note: Market saw problem in by 09:31—one minute after opening
 * Implement your own feature toggle
 * One person implements Story 4 - After the first year
 * One person implements Story 5 - Expensive vehicles after the first year
-* Leave your feature toggles off so the built code doesn't apply the new rules yet
+* Leave toggles off so that rules are not applied yet
+  * Tests need to pass—turn the toggle on in your tests
 * Turn the new features on one at a time
 
 Notes:
@@ -405,12 +414,14 @@ There is also an example solution on the ```subsequent_years``` branch.
 
 ---
 
-# Checkpoint
-## 
-
----
-
 Summary
+
+* Continuous Integration: what/why/how
+* Integrated our code with a free SaaS CI system
+* Continuous Delivery: what/why/how
+* Feature branching explanation and exercise
+* Trunk based development explanation and exercise
+* Other workflows are available
 
 ---
 
@@ -430,3 +441,4 @@ Summary
 -[+] Feature can be tested on each push
 -[+] Potentially earlier visibility of quality regressions
 -[+] No big, scary merge at the end
+
