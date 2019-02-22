@@ -2,9 +2,9 @@
 
 Structure:
 
--[+] What is it?
--[+] Why is it important?
--[+] How do we do it?
++ What is it?
++ Why is it important?
++ How do we do it?
 
 Note: Ask people what they think it means  
 
@@ -126,9 +126,9 @@ We had to wait months for things to be tested
 
 # Integrating code
 
--[+] Exposes incomplete commits & case sensitive paths
--[+] Makes sure code works in a (hopefully) stable environment
--[+] Provides early/incremental visibility of other developers changes
++ Exposes incomplete commits & case sensitive paths
++ Makes sure code works in a (hopefully) stable environment
++ Provides early/incremental visibility of other developers changes
 
 Note: Windows file systems case insensitive.
   Paths which won’t work on Linux/MacOS.  
@@ -147,22 +147,22 @@ Note: Just like the boy who cried wolf…
 
 # Important factors
 
--[+] Time
--[+] Reliability
--[+] Meaningful failures
--[+] Repeatability
++ Time
++ Reliability
++ Meaningful failures
++ Repeatability
 
 ---
 
 # Good practices
 
--[+] Fix broken builds quickly (don’t commit over the top)
-  -[+] Be aware of failures—use notifications etc
--[+] Don’t ‘commit & quit’
--[+] You break it, you fix it
--[+] Fix or delete flaky tests (don’t just re-run)
--[+] Make sure your build stays fast
--[+] Keep test environment ‘like production’
++ Fix broken builds quickly (don’t commit over the top)
+  + Be aware of failures—use notifications etc
++ Don’t ‘commit & quit’
++ You break it, you fix it
++ Fix or delete flaky tests (don’t just re-run)
++ Make sure your build stays fast
++ Keep test environment ‘like production’
 
 Note: Some tests are unreliable—might fail 1% of the time.  
   Fast means 5 minutes or less for some positive feedback.  
@@ -203,31 +203,31 @@ Note: Moving landscape. GitHub should release their own version soon (Actions).
 
 # Common Features
 
--[+] GitHub Integration
--[+] Support for performing tasks in parallel
--[+] Publishing / releasing built artifacts
--[+] SCM support: Git / Subversion / CVS / etc.
--[+] Language / build tool support
--[+] Notifications
--[+] Configuration as code
++ GitHub Integration
++ Support for performing tasks in parallel
++ Publishing / releasing built artifacts
++ SCM support: Git / Subversion / CVS / etc.
++ Language / build tool support
++ Notifications
++ Configuration as code
 
 ---
 
 # E.g. Travis CI
 
--[+] Authorise Travis CI to use your github.com account
--[+] Activate Travis CI with your repository
--[+] Add a `.travis.yml` file to your repository
--[+] Optional: add build badge to the repository
++ Authorise Travis CI to use your github.com account
++ Activate Travis CI with your repository
++ Add a `.travis.yml` file to your repository
++ Optional: add build badge to the repository
 
 --
 
 # Then…
 
--[+] GitHub tells Travis CI each time there is something to fetch and build
--[+] Travis fetches that version of the code
--[+] Travis works out what to run based on repository contents (including `.travis.yml`)
--[+] Travis reports status back to GitHub to mark commits with success/failure
++ GitHub tells Travis CI each time there is something to fetch and build
++ Travis fetches that version of the code
++ Travis works out what to run based on repository contents (including `.travis.yml`)
++ Travis reports status back to GitHub to mark commits with success/failure
 
 --
 

@@ -2,9 +2,9 @@
 
 Structure:
 
--[+] What is it?
--[+] Why is it important?
--[+] How do we do it?
++ What is it?
++ Why is it important?
++ How do we do it?
 
 Note: Laptops closed.  
   Ask people what they think it means  
@@ -59,10 +59,10 @@ Note: Explain push from CI to CD
 
 # Why is it important?
 
--[+] Bigger deployments are riskier
--[+] Deploying fixes
--[+] Some changes require coordination
--[+] Unpushed code is risky
++ Bigger deployments are riskier
++ Deploying fixes
++ Some changes require coordination
++ Unpushed code is risky
 
 Note: Unfinished work can block releasing urgent fixes  
   Sometimes a coordinated release or business activity needs to happen
@@ -113,9 +113,9 @@ Note: Unfinished work can block releasing urgent fixes
 
 # Smaller deployments
 
--[+] Less to test
--[+] Fewer suspects when investigating issues
--[+] Earlier visibility of problems
++ Less to test
++ Fewer suspects when investigating issues
++ Earlier visibility of problems
 
 Note: Kinder to testers—less context to remember.   
 
@@ -132,10 +132,10 @@ How? …
 
 # Canary deployments
 
--[+] As in the canary in the coal mine
--[+] Feature released to small number of test users
--[+] Provides early warning sign
--[+] Similar to A/B Testing
++ As in the canary in the coal mine
++ Feature released to small number of test users
++ Provides early warning sign
++ Similar to A/B Testing
 
 <small>Image credit [State Department/Doug Thompson](https://share.america.gov/english-idiom-canary-coal-mine/)</small> 
 
@@ -148,31 +148,31 @@ Note:
 # How?
 ## Trunk vs Branch
 
--[+] Two different ways to make sure you don’t release incomplete changes
--[+] As usual this is a subjective issue
--[+] Each has pros and cons 
++ Two different ways to make sure you don’t release incomplete changes
++ As usual this is a subjective issue
++ Each has pros and cons 
 
 --
 
 # What is a branch?
 
--[+] Formed when two commits have the same parent
--[+] Commits made against the branch your working copy points to
++ Formed when two commits have the same parent
++ Commits made against the branch your working copy points to
 
 --
 
 # What is trunk?
 
--[+] Trunk is another term for master
--[+] It is a special branch
++ Trunk is another term for master
++ It is a special branch
 
 --
 
 # What is a working copy?
 
--[+] Your local clone is a working copy
--[+] Working copy ≠ branch
--[+] The copy can consist of multiple branches
++ Your local clone is a working copy
++ Working copy ≠ branch
++ The copy can consist of multiple branches
 
 ---
 
@@ -324,9 +324,9 @@ Note: Git Flow: another branch based workflow
 
 ## The case for trunk based development
 
--[+] No one likes merging
--[+] Everyone works on ‘master’
--[+] Changes regularly pushed back to origin
++ No one likes merging
++ Everyone works on ‘master’
++ Changes regularly pushed back to origin
 
 Note: Reminder: opinion follows  
   Still get conflicts but they are incremental, allowing you to change your approach—possibly backing off from changing conflicting areas.  
@@ -335,10 +335,10 @@ Note: Reminder: opinion follows
 
 ## Handling multiple changes in progress
 
--[+] Feature Toggles hide incomplete features in production
--[+] AKA Feature Shields/Flags/Switches/Flippers
--[+] Conditionals around bits of code/user interfaces
--[+] May be toggled on and off per environment
++ Feature Toggles hide incomplete features in production
++ AKA Feature Shields/Flags/Switches/Flippers
++ Conditionals around bits of code/user interfaces
++ May be toggled on and off per environment
 
 (see Further Reading for a good [Feature Toggles article](https://martinfowler.com/articles/feature-toggles.html))
 
@@ -346,11 +346,11 @@ Note: Reminder: opinion follows
 
 ## Trunk Development + CI == 👍
 
--[+] Changes to trunk always picked up by CI system
--[+] You *can* toggle features on per environment or per test
--[+] If you do, feature is tested on each push
--[+] Increased complexity—introduces a new code path
--[+] May need to run tests with multiple toggle combinations
++ Changes to trunk always picked up by CI system
++ You *can* toggle features on per environment or per test
++ If you do, feature is tested on each push
++ Increased complexity—introduces a new code path
++ May need to run tests with multiple toggle combinations
 
 Note: It is possible to do CI with branches but some organisations typical build process or CI tooling means they don’t.  
   Features promoted or new builds toggle per environment.  
@@ -463,17 +463,17 @@ Notes:
 
 ## Pros of Feature Branching
 
--[+] Once feature released, clean up as simple as deleting the branch
--[+] If feature abandoned, unused code not left polluting master
--[+] No need to deal with pesky conflicts while developing
--[+] Scales well with large number of features in progress
++ Once feature released, clean up as simple as deleting the branch
++ If feature abandoned, unused code not left polluting master
++ No need to deal with pesky conflicts while developing
++ Scales well with large number of features in progress
 
 --
 
 ## Pros of Trunk Development
 
--[+] Changes visible to whole team throughout feature development
--[+] Code review regular rather than large and unpalatable
--[+] Feature can be tested on each push
--[+] Potentially earlier visibility of quality regressions
--[+] No big, scary merge at the end
++ Changes visible to whole team throughout feature development
++ Code review regular rather than large and unpalatable
++ Feature can be tested on each push
++ Potentially earlier visibility of quality regressions
++ No big, scary merge at the end
