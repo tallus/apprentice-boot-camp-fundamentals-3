@@ -304,6 +304,13 @@ script:
   - pytest
 ```
 
+```yaml
+language: node_js
+before_script: "cd exercises/javascript"
+node_js:
+  - 10
+```
+
 --
 
 ## Exercise Part 3: Make it fail
