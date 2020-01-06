@@ -296,6 +296,13 @@ script:
 ```
 
 ```yaml
+language: node_js
+before_script: "cd exercises/javascript"
+node_js:
+  - 10
+```
+
+```yaml
 language: python
 before_script: "cd exercises/python"
 python: 
