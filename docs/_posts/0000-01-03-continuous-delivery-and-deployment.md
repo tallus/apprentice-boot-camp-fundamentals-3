@@ -278,7 +278,7 @@ Delete the branch… done.
 
 --
 
-<backgroundimage>http://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png</backgroundimage>
+<img src="http://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png"/>
 
 + Father of the Linux kernel
 + Creator of git
@@ -305,6 +305,10 @@ Allegedly he has attempted to clean up his act since
 
 [gitstats for Linux kernel end of 2019](https://phoronix.com/misc/linux-eoy2019/lines.html)
 
++ It's not just Linux
+
+[<img src="https://opensource.org/files/osi_keyhole_300X300_90ppi_0.png">](https://www.opensource.org)
+
 --
 
 > The normal git workflow involves the use of a lot of branches.
@@ -312,6 +316,11 @@ Allegedly he has attempted to clean up his act since
 > Branches in git are cheap, there is no reason to not make free use of them.
 
 [A Guide to the Kernel Development Process](https://www.kernel.org/doc/html/latest/process/7.AdvancedTopics.html) 
+
+--
+
+
+
 
 ---
 
