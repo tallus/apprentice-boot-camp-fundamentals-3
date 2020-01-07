@@ -161,6 +161,16 @@ Note:
 
 --
 
+<img src="https://www.atlassian.com/dam/jcr:746be214-eb99-462c-9319-04a4d2eeebfa/01.svg">
+
+Note:
+Explain the diagram:
+time goes left to right
+circle = commit
+lines are branches
+
+--
+
 # What is trunk?
 
 + Trunk is another term for master
@@ -177,6 +187,15 @@ Note:
 ---
 
 # The case for branching
+
+
+--
+
+## Branches
+
++ Protect the main code-base from incomplete changes
++ Enable parallel streams of development
++ Make the history more legible
 
 --
 
@@ -252,6 +271,51 @@ git push
 Delete the branch… done.
 
 ---
+
+<img height="500" src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinuxCon_Europe_Linus_Torvalds_03_%28cropped%29.jpg">
+
++ Linus Torvalds
+
+--
+
+<backgroundimage>http://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png</backgroundimage>
+
++ Father of the Linux kernel
++ Creator of git
++ Mother of...
+
+--
+
+> What the #*?!, guys?
+> This piece-of-$#?! commit is marked for stable, but you clearly never
+> even test-compiled it, did you?
+
+> There aren't enough swear-words in the English language, so now I'll
+> have to call you perkeleen vittupää just to express my disgust and
+> frustration with this crap.
+ 
+> Linus [LKML.ORG 2013](https://lkml.org/lkml/2013/7/13/132)
+
+Note:
+Allegedly he has attempted to clean up his act since
+
+--
+
+## Why is Linux a good example?
+
+[gitstats for Linux kernel end of 2019](https://phoronix.com/misc/linux-eoy2019/lines.html)
+
+--
+
+> The normal git workflow involves the use of a lot of branches.
+> Each line of development can be separated into a separate “topic branch” and maintained independently.
+> Branches in git are cheap, there is no reason to not make free use of them.
+
+[A Guide to the Kernel Development Process](https://www.kernel.org/doc/html/latest/process/7.AdvancedTopics.html) 
+
+---
+
+
 
 # A prophecy...
 
