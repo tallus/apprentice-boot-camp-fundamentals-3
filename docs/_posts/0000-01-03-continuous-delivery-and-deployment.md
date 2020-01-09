@@ -204,14 +204,15 @@ lines are branches
 > “… all feature development should take place in a dedicated branch instead of the master branch. … makes it easy for multiple developers to work on a particular feature without disturbing the main codebase. It also means the master branch will never contain broken code …”
 > —[Git Feature Branch Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow)
 
----
+--
 
 ### How do feature branches enable CD?
 
-* Nobody works on the master branch
-* Any feature based changes made on a feature branch
++ Nobody works on the master branch
++ Any feature-based changes made on a feature branch
++ Some Continuous Integration systems only run of master...
 
----
+--
 
 ## Example *
 
@@ -319,12 +320,13 @@ Allegedly he has attempted to clean up his act since
 
 --
 
+> ...Git is “expressly designed to make you feel less intelligent than you thought you were.” What’s your response to this?
 
+> Torvalds: So I think it used to be true but isn’t any more. There is a few reasons people feel that way, but I think only one of them remains. The one that remains is fairly simple: “you can do things so many ways.”
 
+[10 Years of Git](https://www.linuxfoundation.org/blog/2015/04/10-years-of-git-an-interview-with-git-creator-linus-torvalds)
 
----
-
-
+--
 
 # A prophecy...
 
@@ -332,7 +334,16 @@ Allegedly he has attempted to clean up his act since
 <p><a href="https://vimeo.com/60788996">GIT IS HARD</a> from <a href="https://vimeo.com/owltastic">Meagan Fisher</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 Note:
+This video probably needs a bit of context setting - it's a developer having some issues with git which perplexes the whole team.
+This situation is not uncommon ;-)
 We're going to do some exercises involving branching, git is a very powerful tool, it's possible to get things VERY wrong.
+
+--
+
+<img style="border:0;box-shadow:none;background-color:transparent" src="images/aliens.png">
+
+Note:
+I'm increasingly of the opinion that there is only one real explanation for how git works, and that is that it is alien technology ;-)
 
 --
 
@@ -343,10 +354,19 @@ Branches can easily get out of control, they should be few in number and short-l
 
 --
 
-<img style="border:0;box-shadow:none;background-color:transparent" src="images/aliens.png">
+### Git branching guidelines
+
++ Branches should be short-lived
++ The number of branches should be small
+
+--
+
+## Merging
 
 Note:
-I'm increasingly of the opinion that there is only one real explanation for how git works, and that is that it is alien technology ;-)
+What is a merge
+Sometimes it's easy
+And sometimes it's hard
 
 ---
 
