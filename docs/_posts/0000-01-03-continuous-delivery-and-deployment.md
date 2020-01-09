@@ -354,8 +354,14 @@ Branches can easily get out of control, they should be few in number and short-l
 
 --
 
-### Git branching guidelines
+### Git guidelines
 
++ Use a small set of commands:
+    + clone
+    + commit
+    + push
+    + pull
++ Use a consistent workflow
 + Branches should be short-lived
 + The number of branches should be small
 
@@ -363,10 +369,31 @@ Branches can easily get out of control, they should be few in number and short-l
 
 ## Merging
 
+<img src="https://wac-cdn.atlassian.com/dam/jcr:09308632-38a3-4637-bba2-af2110629d56/07.svg?cdnVersion=ks">
+
+
 Note:
 What is a merge
 Sometimes it's easy
 And sometimes it's hard
+
+--
+
++ Git is actually good at merging
++ Some merges are simple
++ Some merges are not
++ Keeping your branches short-lived decreases the risk of complicated merges
+    
+Note:
+Whiteboard what might be simple and complex merges with the group
+
+--
+
+
+//TODO talk about the dangers of long-lived branches
+
+## Beware
+
 
 ---
 
