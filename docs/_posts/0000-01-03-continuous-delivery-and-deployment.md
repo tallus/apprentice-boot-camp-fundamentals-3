@@ -47,17 +47,17 @@ Note: At any time means when code is pushed.
 
 > … when releasing the software, doing so manually …
 
-Note: Manually triggering an automated process vs an automatic process.
+Note: Manually triggering an automated process vs an automatic process.  
 
 ---
 
 <img src="images/continous-integration-delivery-deployment.svg">
 
-Note: Explain push from CI to CD
+Note: Explain push from CI to CD  
 
 ---
 
-# Why is it important?
+## Why is it important?
 
 + Bigger deployments are riskier
 + Deploying fixes
@@ -65,7 +65,7 @@ Note: Explain push from CI to CD
 + Unpushed code is risky
 
 Note: Unfinished work can block releasing urgent fixes  
-  Sometimes a coordinated release or business activity needs to happen
+  Sometimes a coordinated release or business activity needs to happen  
 
 ---
 
@@ -111,13 +111,13 @@ Note: Unfinished work can block releasing urgent fixes
 
 ---
 
-# Smaller deployments
+## Smaller deployments
 
 + Less to test
 + Fewer suspects when investigating issues
 + Earlier visibility of problems
 
-Note: Kinder to testers—less context to remember.   
+Note: Kinder to testers—less context to remember.  
 
 ---
 
@@ -130,7 +130,7 @@ How? …
 <backgroundimage>https://staticshare.america.gov/uploads/2014/11/canary_art22-1068x479.jpg</backgroundimage>
 <backgroundimageopacity>0.25</backgroundimageopacity>
 
-# Canary deployments
+## Canary deployments
 
 + As in the canary in the coal mine
 + Feature released to small number of test users
@@ -141,12 +141,12 @@ How? …
 
 Note: 
   You will always miss things and release defects/have issues in production.  
-  Canary deployments are a technique to derisk significant changes to production.
+  Canary deployments are a technique to derisk significant changes to production.  
 
 ---
 
-# How?
-## Trunk vs Branch
+## How?
+### Trunk vs Branch
 
 + Two different ways to make sure you don’t release incomplete changes
 + As usual this is a subjective issue
@@ -154,21 +154,21 @@ Note:
 
 --
 
-# What is a branch?
+## What is a branch?
 
 + Formed when two commits have the same parent
 + Commits made against the branch your working copy points to
 
 --
 
-# What is trunk?
+## What is trunk?
 
 + Trunk is another term for master
 + It is a special branch
 
 --
 
-# What is a working copy?
+## What is a working copy?
 
 + Your local clone is a working copy
 + Working copy ≠ branch
@@ -176,7 +176,7 @@ Note:
 
 ---
 
-# The case for branching
+## The case for branching…
 
 --
 
@@ -187,7 +187,7 @@ Note:
 
 ---
 
-### How do feature branches enable CD?
+## How do feature branches enable CD?
 
 * Nobody works on the master branch
 * Any feature based changes made on a feature branch
@@ -247,13 +247,13 @@ git push
 
 --
 
-# Afterwards
+## Afterwards
 
 Delete the branch… done.
 
 ---
 
-# A prophecy...
+## A prophecy...
 
 <iframe src="https://player.vimeo.com/video/60788996" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <p><a href="https://vimeo.com/60788996">GIT IS HARD</a> from <a href="https://vimeo.com/owltastic">Meagan Fisher</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
@@ -277,7 +277,7 @@ I'm increasingly of the opinion that there is only one real explanation for how 
 
 ---
 
-### Exercise: Make two changes using branches
+## Exercise: Make two changes using branches
 
 * Work in pairs, ___***share the same git repository***___
 * Create two branches based on the same start point
@@ -289,13 +289,13 @@ I'm increasingly of the opinion that there is only one real explanation for how 
 
 
 Notes:
-See branch ```petrol_tax``` for a starting point to this exercise if they haven't completed the previous one.
-N.B. don't get them to checkout the branch (git weirdness will ensue), just get them to copy-paste the working code.
-There are already test suites for these stories they just need to be enabled so the build runs them.
+See branch ```petrol_tax``` for a starting point to this exercise if they haven't completed the previous one.  
+N.B. don't get them to checkout the branch (git weirdness will ensue), just get them to copy-paste the working code.  
+There are already test suites for these stories they just need to be enabled so the build runs them.  
 
 --
 
-# Reflection
+## Reflection
 
 * What happened?
 * Did you have any failed builds? If so, why?
@@ -318,7 +318,7 @@ Note: Created two branches
 
 <img height="600" src="https://wac-cdn.atlassian.com/dam/jcr:61ccc620-5249-4338-be66-94d563f2843c/05%20(2).svg?cdnVersion=kv">
 
-Note: Git Flow: another branch based workflow
+Note: Git Flow: another branch based workflow  
 
 ---
 
@@ -339,8 +339,7 @@ Note: Reminder: opinion follows
 + AKA Feature Shields/Flags/Switches/Flippers
 + Conditionals around bits of code/user interfaces
 + May be toggled on and off per environment
-
-(see Further Reading for a good [Feature Toggles article](https://martinfowler.com/articles/feature-toggles.html))
++ (see Further Reading for a good [Feature Toggles article](https://martinfowler.com/articles/feature-toggles.html))
 
 --
 
@@ -354,7 +353,7 @@ Note: Reminder: opinion follows
 
 Note: It is possible to do CI with branches but some organisations typical build process or CI tooling means they don’t.  
   Features promoted or new builds toggle per environment.  
-  Feature branches don’t address complexity—can’t test integrated WIP.
+  Feature branches don’t address complexity—can’t test integrated WIP.  
 
 ---
 
@@ -377,13 +376,13 @@ Taken from [Feature Toggles (aka Feature Flags)](https://martinfowler.com/articl
 
 --
 
-# Tidying Up
+## Tidying Up
 
 Code was added to implement feature toggles so we need to tidy this away once functionality fully released
 
 ---
 
-# A cautionary tale
+## A cautionary tale
 
 [Knightmare: A DevOps Cautionary Tale](https://dougseven.com/2014/04/17/knightmare-a-devops-cautionary-tale/)
 
@@ -408,7 +407,7 @@ Note:
 
 <fragment/> (09:31 Market panics)
 
-Note: Market saw problem in by 09:31—one minute after opening
+Note: Market saw problem in by 09:31—one minute after opening  
   No kill switch  
 
 --
@@ -417,8 +416,8 @@ Note: Market saw problem in by 09:31—one minute after opening
 
 (toggle left on)
 
-Note:   
-  Back out left resulted in eight bad servers—4 million transactions
+Note:  
+  Back out left resulted in eight bad servers—4 million transactions  
 
 --
 
@@ -440,14 +439,14 @@ Bankrupt!
 * Turn the new features on one at a time
 
 Notes:
-See branch ```diesel_and_alternative_tax``` for a starting point to this exercise if they haven't completed the previous one.
-N.B. don't get them to checkout the branch (git weirdness will ensue), just get them to copy-paste the working code.
-There are already test suites for these stories they just need to be enabled so the build runs them.
-There is also an example solution on the ```subsequent_years``` branch.
+See branch ```diesel_and_alternative_tax``` for a starting point to this exercise if they haven't completed the previous one.  
+N.B. don't get them to checkout the branch (git weirdness will ensue), just get them to copy-paste the working code.  
+There are already test suites for these stories they just need to be enabled so the build runs them.  
+There is also an example solution on the ```subsequent_years``` branch.  
 
 ---
 
-Summary
+## Summary
 
 * Continuous Integration: what/why/how
 * Integrated our code with a free SaaS CI system
@@ -457,7 +456,7 @@ Summary
 * Other workflows are available
 
 Notes:   
-  Laptops closed.
+  Laptops closed.  
 
 --
 

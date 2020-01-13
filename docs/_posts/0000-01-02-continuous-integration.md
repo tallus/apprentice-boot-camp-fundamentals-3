@@ -1,4 +1,4 @@
-# Continuous Integration
+## Continuous Integration
 
 Structure:
 
@@ -47,11 +47,11 @@ Note: Why is it good to detect quickly?
 
 ---
 
-# Common sense?
+## Common sense?
 
 ---
 
-# Why is it important?
+## Why is it important?
 
 > “Works on my machine.”  
 > —<cite>Unpopular developer</cite>
@@ -60,13 +60,13 @@ Note: Used to be a very common phrase.
 
 --
 
-# There was a time before automated tests…
+## There was a time before automated tests…
 
 We had to wait months for things to be tested
 
 --
 
-# But then…
+## But then…
 
 ---
 
@@ -124,7 +124,7 @@ We had to wait months for things to be tested
 
 ---
 
-# Integrating code
+## Integrating code
 
 + Exposes incomplete commits & case sensitive paths
 + Makes sure code works in a (hopefully) stable environment
@@ -136,25 +136,27 @@ Note: Windows file systems case insensitive.
   When working in similar areas functional changes sometimes cause conflicting changes.  
   Much easier to address conflicts while they are still small rather than spending days trying to consolidate two directions.  
 
----
+--
 
-## When the build fails, you want to be confident that the code is broken
+## Build Confidence
+
+When the build fails, you want to be confident that the code is broken
 
 Note: Just like the boy who cried wolf…  
-  If people don’t trust the build, they ignore it
+  If people don’t trust the build, they ignore it  
 
----
+--
 
-# Important factors
+## Important factors
 
 + Time
 + Reliability
 + Meaningful failures
 + Repeatability
 
----
+--
 
-# Good practices
+## Good practices
 
 + Fix broken builds quickly (don’t commit over the top)
   + Be aware of failures—use notifications etc
@@ -170,7 +172,7 @@ Note: Some tests are unreliable—might fail 1% of the time.
 
 ---
 
-# Typical Enterprise ‘Pipeline’
+## Typical Enterprise ‘Pipeline’
 
 * Run fast tests
 * Run slow tests and static analysis
@@ -185,9 +187,9 @@ What? ✅
 Why? ✅  
 How? …
 
----
+--
 
-# Many options
+## Many options
 
 * Bamboo
 * CircleCI
@@ -199,9 +201,9 @@ How? …
 
 Note: Moving landscape. GitHub should release their own version soon (Actions).  
 
----
+--
 
-# Common Features
+## Common Features
 
 + GitHub Integration
 + Support for performing tasks in parallel
@@ -213,7 +215,7 @@ Note: Moving landscape. GitHub should release their own version soon (Actions).
 
 ---
 
-# E.g. Travis CI
+## E.g. Travis CI
 
 + Authorise Travis CI to use your github.com account
 + Activate Travis CI with your repository
@@ -222,7 +224,7 @@ Note: Moving landscape. GitHub should release their own version soon (Actions).
 
 --
 
-# Then…
+## Then…
 
 + GitHub tells Travis CI each time there is something to fetch and build
 + Travis fetches that version of the code
@@ -245,13 +247,13 @@ Note: Travis looks at repo to work out how to build once it knows language.
 
 ---
 
-### Caution: Git
+## Caution: Git
 
 <img src="https://imgs.xkcd.com/comics/git.png">
 
 ---
 
-# Exercise prep
+## Exercise prep
 
 * Go to https://github.com/MCR-Digital/tax_calculator and fork it
 * `git clone https://github.com/[YOURUSERNAME]/tax_calculator.git`
@@ -270,19 +272,21 @@ Note: Travis looks at repo to work out how to build once it knows language.
 * Activate Travis CI for your fork
 
 Note: Make sure you have the right Travis CI  
-  travis-ci.com is the paid for enterprise version
+  travis-ci.com is the paid for enterprise version  
 
 --
 
-#### Exercise Part 2: Configure your build
+## Exercise Part 2: Configure your build
 
 * On GitHub, create `.travis.yml` at root of repo
 * Hopefully see your tests pass
+
 
 ```yaml
 language: java
 before_script: "cd exercises/java"
 ```
+<!-- .element: style="font-size: 35%" -->
 
 ```yaml
 language: csharp
@@ -294,6 +298,7 @@ script:
   - "dotnet restore"
   - "dotnet test"
 ```
+<!-- .element: style="font-size: 35%" -->
 
 ```yaml
 language: node_js
@@ -301,6 +306,7 @@ before_script: "cd exercises/javascript"
 node_js:
   - 10
 ```
+<!-- .element: style="font-size: 35%" -->
 
 ```yaml
 language: python
@@ -310,15 +316,16 @@ python:
 script: 
   - pytest
 ```
+<!-- .element: style="font-size: 35%" -->
 
 --
 
 ## Exercise Part 3: Make it fail
 
-* Find the tests which aren't running (the ones for petrol vehicles)
-* Make the tests run (and fail)
-* Push your change
-* Watch it fail
+* Find the tests which aren't running (the ones for petrol vehicles)  
+* Make the tests run (and fail)  
+* Push your change  
+* Watch it fail  
 
 --
 
@@ -331,4 +338,4 @@ script:
 * Push your change
 * Watch it pass 🤞
 
-Note: Did you get an email telling you it had failed?
+Note: Did you get an email telling you it had failed?  
