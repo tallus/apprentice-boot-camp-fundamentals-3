@@ -1,7 +1,7 @@
 # Your presentation title
 title: Apprentice boot-camp - Fundamentals 3
 
-remote_theme: autotraderuk/jekyll-revealjs@v2.0.0
+remote_theme: autotraderuk/jekyll-revealjs
 plugins:
   - jekyll-remote-theme
 
