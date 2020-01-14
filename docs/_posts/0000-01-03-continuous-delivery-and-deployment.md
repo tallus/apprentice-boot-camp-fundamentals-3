@@ -210,7 +210,7 @@ lines are branches
 
 + Nobody works on the master branch
 + Any feature-based changes made on a feature branch
-+ Some Continuous Integration systems only run of master...
++ Some Continuous Integration systems only run on master...
 
 --
 
@@ -384,15 +384,47 @@ And sometimes it's hard
 + Some merges are not
 + Keeping your branches short-lived decreases the risk of complicated merges
     
+
+--
+
+
+### Different kinds of merge
+
+// TODO - make sure nested fragments work
+
+* Simple
+    + Different files
+    + Same file, different lines
+    + Same file, same lines
+* Complicated
+
 Note:
 Whiteboard what might be simple and complex merges with the group
 
 --
 
+### Diverging branches
 
-//TODO talk about the dangers of long-lived branches
+<img src="images/diverging_branches.svg">
 
-## Beware
++ The problem gets worse with distance and time
+
+
+Note:
+It's not just the change itself that determines the complexity of the merge, they get worse with distance and time.
+You can end up with separate bits of software.
+Like straddling two diverging canoes.
+
+
+--
+
+### Conflicts
+
+* What are they
+* What do they look like
+* What is the effect
+* How do you resolve them
+
 
 
 ---
