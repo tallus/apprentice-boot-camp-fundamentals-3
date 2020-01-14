@@ -318,6 +318,8 @@ script:
 ```
 <!-- .element: style="font-size: 35%" -->
 
+Note: Remind them about the dot at the front of the filename!  
+
 --
 
 ## Exercise Part 3: Make it fail
