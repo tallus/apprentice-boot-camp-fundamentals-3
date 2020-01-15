@@ -57,8 +57,6 @@ The slides can be viewed from the link at the top of the repository.
 
 # Boot Camp Summary
 
-## Day One
-
 * Continuous Integration
   * What it is and why we do it
   * Examples of different CI systems
@@ -75,19 +73,6 @@ The slides can be viewed from the link at the top of the repository.
   * What is a feature shield
   * Exercise: Get them to implement a feature shield
 * Comparison of approaches
-
-## Day Two
-
-Agile and related methodologies and tools
-
-## Day Three
-
-Testing: 
-
-* Test Doubles
-* Dependency Injection
-* Mocking frameworks
-* 2nd Tier of Testing Pyramid
 
 # Briefing for organisation mentors
 
