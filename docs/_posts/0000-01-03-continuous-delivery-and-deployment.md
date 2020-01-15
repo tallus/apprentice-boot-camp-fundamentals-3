@@ -379,6 +379,9 @@ And sometimes it's hard
 
 --
 
+<backgroundimage>images/traffic_merge.svg</backgroundimage>
+<backgroundimageopacity>0.25</backgroundimageopacity>
+
 + Git is actually good at merging
 + Some merges are simple
 + Some merges are not
@@ -416,12 +419,48 @@ Like straddling two diverging canoes.
 
 --
 
+### A simple merge
+
+<img src="images/green_merge.png">
+
++ Be a little wary
+
+Note:
+Worth pointing out that just because a merge can be completed automatically, does not guarantee the functionality is
+correct.
+
+--
+
+
+### A complicated merge
+
+<img src="images/merge_hell.png">
+
+Note:
+A salutary tale - whilst working on the slides I failed to follow my own advice and ended up with conflicts.
+Explain the merge view, our changes on the left, base version in the middle, other developer's version on the right.
+
+--
+
 ### Conflicts
 
-* What are they
-* What do they look like
-* What is the effect
-* How do you resolve them
+```
+<<<<<<< HEAD:file.txt
+Conflicts
+=======
+What conflicts?
+>>>>>>> 77976da35a11db4580b80ae27e8d65caf5208086:file.txt
+```
+
++ Must be resolved manually
++ _**BE AFRAID!**_
+
+
+Note:
+What are they
+What do they look like
+What is the effect
+How do you resolve them
 
 
 
