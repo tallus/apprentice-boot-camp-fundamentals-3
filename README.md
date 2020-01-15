@@ -51,7 +51,7 @@ The slides can be viewed from the link at the top of the repository.
 
 ## Exercises
 
-The code for the exercises in this boot camp is currently in the [tax_calculator](https://github.com/MCR-Digital/tax_calculator) boot camp.
+The code for the exercises in this boot camp is currently in the [tax_calculator repository](https://github.com/MCR-Digital/tax_calculator).
 
 * Setting up Travis CI, changing tax_calculator & watching Travis fail/pass
 * Changing tax_calculator using feature branches
