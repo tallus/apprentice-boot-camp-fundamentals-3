@@ -6,7 +6,10 @@
 
 ## Competencies, Behaviours and Knowledge units
 
-* TBC
+* TC1 Logic
+* TC4 Test
+* TC8 Deployment
+* TC9 Software development life cycle
 
 ## Resources 
 
@@ -27,13 +30,15 @@ Mentors should be comfortable with branching, feature toggles, setting up Travis
 
 ## Prep-work for apprentices
 
-* Make sure you can sign in to GitHub
+* See [the preparation description](https://github.com/MCR-Digital/tax_calculator/#preparation)
 
 ### Follow-on tasks
 
 Organisation mentors should look to exercise the knowledge we’ve covered in the boot camp. Below are suggestions for tasks that would do this, but please use your own judgement to work out what to do. There is no need for anything to be returned to MD or the presenters—it’s just a learning exercise.
 
-* TBC
+* Find out what CI systems the organisation uses
+* Find out how the team works with branches and discuss this with your mentor
+* Find out how the team deploys code and manages releases to mitigate risk
 
 ## Further reading / learning resources
 
@@ -44,6 +49,7 @@ Organisation mentors should look to exercise the knowledge we’ve covered in th
 * [Feature Toggles](https://martinfowler.com/articles/feature-toggles.html) by Pete Hodgson at ThoughtWorks
 * [Knightmare: A DevOps Cautionary Tale](https://dougseven.com/2014/04/17/knightmare-a-devops-cautionary-tale/) about Knight Capital disaster
 * [The Cathedral and the Bazaar](http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/)
+* [Six Strategies for Application Deployment](https://thenewstack.io/deployment-strategies/)
 
 ## Slides
 
@@ -78,7 +84,16 @@ The code for the exercises in this boot camp is currently in the [tax_calculator
 
 # Briefing for organisation mentors
 
-* TBC
+* Review the summary above
+* Have a go at the exercises to get a gist for the
+    * Exercises are described in the slides linked to at the top of the repo
+    * Code for the exercises is in the [tax_calculator repository](https://github.com/MCR-Digital/tax_calculator)
+* On the day get involved when they are doing the exercises and help them when they get stuck
+* Ask them open questions about what they are doing
+  * Ask to see what they’ve done
+  * Start with the tests
+* Help resolve language specific issues
+* Coach them towards finding their own solutions rather than fixing things for them
 
 # Working with the slides
 
