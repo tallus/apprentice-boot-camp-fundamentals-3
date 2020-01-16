@@ -209,8 +209,13 @@ lines are branches
 ## How do feature branches enable CD?
 
 + Nobody works on the master branch
+    + thus master is always releaseable
 + Any feature-based changes made on a feature branch
 + Some Continuous Integration systems only run on master...
+
+
+Note:
+Mention that some people consider that not running against master isn't true CI.
 
 --
 
@@ -457,11 +462,10 @@ What conflicts?
 
 
 Note:
-What are they
-What do they look like
-What is the effect
-How do you resolve them
-
+What are they  
+What do they look like  
+What is the effect  
+How do you resolve them  
 
 
 ---
