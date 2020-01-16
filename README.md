@@ -6,7 +6,10 @@
 
 ## Competencies, Behaviours and Knowledge units
 
-* TBC
+* TC1 Logic
+* TC4 Test
+* TC8 Deployment
+* TC9 Software development life cycle
 
 ## Resources 
 
