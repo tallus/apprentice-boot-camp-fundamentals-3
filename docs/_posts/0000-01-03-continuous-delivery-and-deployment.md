@@ -346,12 +346,14 @@ Note: Reminder: opinion follows
 ## Trunk Development + CI == 👍
 
 + Changes to trunk always picked up by CI system
++ Feature changes are continuously integrated with each other
 + You *can* toggle features on per environment or per test
 + If you do, feature is tested on each push
 + Increased complexity—introduces a new code path
 + May need to run tests with multiple toggle combinations
 
-Note: It is possible to do CI with branches but some organisations typical build process or CI tooling means they don’t.  
+Note: It is possible to do CI with branches but some organisations typical build process or CI tooling means they don’t.
+  Testing features in isolation on branches is not CI.    
   Features promoted or new builds toggle per environment.  
   Feature branches don’t address complexity—can’t test integrated WIP.  
 
@@ -392,14 +394,23 @@ Code was added to implement feature toggles so we need to tidy this away once fu
 
 --
 
-## New feature Reused feature toggle
+## Deployment of new feature was incomplete
+
+💻 ✅ 💻 ✅ 💻 ✅ 💻 ✅ 💻 ✅ 💻 ✅ 💻 ✅ 💻 ❌
+
+Note:   
+  One server (of eight) had not been updated by a human  
+  Server running 8yr old code hidden by now reused toggle  
 
 --
 
-## Deployment of new feature was incomplete
+## New feature reused eight year old feature toggle
 
-Note:   
-  One server (of eight) had failed deployment and was running older code deactivated by now reused toggle  
+🤓 🤓 🤓 🤓 🤓 🤓 🤓 😡
+
+Note:
+  Single server had old behaviour activated instead  
+  That server followed a different strategy
 
 --
 
@@ -416,6 +427,8 @@ Note: Market saw problem in by 09:31—one minute after opening
 
 (toggle left on)
 
+😡 😡 😡 😡 😡 😡 😡 😡
+
 Note:  
   Back out left resulted in eight bad servers—4 million transactions  
 
@@ -424,6 +437,20 @@ Note:
 ## $460 million loss over in 45 minutes
 
 Bankrupt!
+
+<img src=https://miro.medium.com/max/1240/1*-BDqsaWVHxONCnnJI3PetQ.jpeg>
+
+<small><caption>[Source](https://medium.com/dataseries/the-rise-and-fall-of-knight-capital-buy-high-sell-low-rinse-and-repeat-ae17fae780f6) (origin unknown)</caption></small>
+
+--
+
+## The lesson
+
++ Don’t reuse feature toggles
++ Delete redundant code
++ Humans are error prone
++ Deployments should be automated, reliable and consistent
++ Risky changes should be easily deactivated
 
 ---
 
