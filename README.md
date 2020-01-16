@@ -36,7 +36,9 @@ Mentors should be comfortable with branching, feature toggles, setting up Travis
 
 Organisation mentors should look to exercise the knowledge we’ve covered in the boot camp. Below are suggestions for tasks that would do this, but please use your own judgement to work out what to do. There is no need for anything to be returned to MD or the presenters—it’s just a learning exercise.
 
-* TBC
+* Find out what CI systems the organisation uses
+* Find out how the team works with branches and discuss this with your mentor
+* Find out how the team deploys code and manages releases to mitigate risk
 
 ## Further reading / learning resources
 
