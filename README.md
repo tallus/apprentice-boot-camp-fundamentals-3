@@ -30,7 +30,7 @@ Mentors should be comfortable with branching, feature toggles, setting up Travis
 
 ## Prep-work for apprentices
 
-* Make sure you can sign in to GitHub
+* See [the preparation description](https://github.com/MCR-Digital/tax_calculator/#preparation)
 
 ### Follow-on tasks
 
@@ -82,7 +82,16 @@ The code for the exercises in this boot camp is currently in the [tax_calculator
 
 # Briefing for organisation mentors
 
-* TBC
+* Review the summary above
+* Have a go at the exercises to get a gist for the
+    * Exercises are described in the slides linked to at the top of the repo
+    * Code for the exercises is in the [tax_calculator repository](https://github.com/MCR-Digital/tax_calculator)
+* On the day get involved when they are doing the exercises and help them when they get stuck
+* Ask them open questions about what they are doing
+  * Ask to see what they’ve done
+  * Start with the tests
+* Help resolve language specific issues
+* Coach them towards finding their own solutions rather than fixing things for them
 
 # Working with the slides
 
