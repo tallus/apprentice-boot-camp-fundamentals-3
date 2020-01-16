@@ -44,6 +44,7 @@ Organisation mentors should look to exercise the knowledge we’ve covered in th
 * [Feature Toggles](https://martinfowler.com/articles/feature-toggles.html) by Pete Hodgson at ThoughtWorks
 * [Knightmare: A DevOps Cautionary Tale](https://dougseven.com/2014/04/17/knightmare-a-devops-cautionary-tale/) about Knight Capital disaster
 * [The Cathedral and the Bazaar](http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/)
+* [Six Strategies for Application Deployment](https://thenewstack.io/deployment-strategies/)
 
 ## Slides
 
