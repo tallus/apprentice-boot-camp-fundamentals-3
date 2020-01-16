@@ -660,7 +660,7 @@ Note: Get them to call out what they wrote down
 ## Exercise
 ### Make two changes using trunk based development
 
-* Work in pairs - ___***sharing the same git repository***___
+* Work in pairs - ___***SHARING THE SAME GIT REPOSITORY***___
 * Implement your own feature toggle
 * One person implements Story 4 - After the first year
 * One person implements Story 5 - Expensive vehicles after the first year
