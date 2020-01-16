@@ -1,8 +1,9 @@
 ## Exercise prep
 
-* Go to https://github.com/MCR-Digital/tax_calculator and fork it
-* `git clone https://github.com/[YOURUSERNAME]/tax_calculator.git`
-* Make sure you can run tests in your language (they are all ignored)
+* Fork https://github.com/MCR-Digital/tax_calculator
+* `git clone https://github.com/[USER]/tax_calculator.git`
+* Make sure you can run tests in your language  
+(they are all ignored to start with)
   * Java folk: import the `exercises/java` directory using ‘Import project from external model’
   * Choose ‘Use default gradle wrapper (recommended)’
 
@@ -79,10 +80,12 @@ Note: Remind them about the dot at the front of the filename!
 ## Exercise Part 4: Make it pass
 
 * Implement code to make the tests pass (see Story 1)
-* ___***Do not change ‘DummyTaxCalculator’***___—write your own implementation (e.g. ‘DefaultTaxCalculator’)
+* ___***Do not change ‘DummyTaxCalculator’***___—write your own implementation (e.g. ‘DefaultTaxCalculator’)*
 * Try to ___***keep your build green***___
 * ___***Do not change the tests***___ (except to introduce your new calculator)
 * Push your change
-* Watch it pass 🤞
+* Watch it pass
+
+**\*N.B. you'll need to set the year to `2019` in your `TaxCalculator` object**
 
 Note: Did you get an email telling you it had failed?  

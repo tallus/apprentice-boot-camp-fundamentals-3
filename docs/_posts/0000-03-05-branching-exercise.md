@@ -1,6 +1,6 @@
 ## Exercise: Make two changes using branches
 
-* Work in pairs, ___***share the same git repository***___
+* Work in pairs, ___***SHARE THE SAME GIT REPOSITORY***___
 * Create two branches based on the same start point
   * `git checkout -b branch_to_create`
 * One person implements Story 2 - Diesel vehicles
