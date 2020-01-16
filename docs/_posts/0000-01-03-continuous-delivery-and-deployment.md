@@ -637,13 +637,23 @@ Bankrupt!
 
 --
 
-## The lesson
+## Exercise: discuss what lessons should be learned (5 minutes)
+
+* Split into small groups of about three
+* Discuss what happened
+* Note down 3–4 lessons that should be learned
+
+--
+
+## What should we learn?
 
 + Don’t reuse feature toggles
 + Delete redundant code
-+ Humans are error prone
++ Humans make mistakes
 + Deployments should be automated, reliable and consistent
 + Risky changes should be easily deactivated
+
+Note: Get them to call out what they wrote down  
 
 ---
 
