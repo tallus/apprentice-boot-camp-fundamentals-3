@@ -183,9 +183,8 @@ Note: Some tests are unreliable—might fail 1% of the time.
 
 ---
 
-What? ✅   
-Why? ✅  
-How? …
+Talked about how what CI is, and why we do it.
+On to the How…
 
 --
 
