@@ -1,11 +1,12 @@
 ## Exercise prep
 
+(in case you haven’t got set up yet)
+
 * Fork https://github.com/MCR-Digital/tax_calculator
 * `git clone https://github.com/[USER]/tax_calculator.git`
 * Make sure you can run tests in your language  
 (they are all ignored to start with)
-  * Java folk: import the `exercises/java` directory using ‘Import project from external model’
-  * Choose ‘Use default gradle wrapper (recommended)’
+  * Java folk: open IntelliJ IDEA and from the `File` menu choose `Open`, then select the `build.gradle` file from the `exercises\java` directory.
 
 --
 
