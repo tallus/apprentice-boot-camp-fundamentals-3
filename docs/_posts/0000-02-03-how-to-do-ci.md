@@ -47,16 +47,17 @@ Note: Some tests are unreliable—might fail 1% of the time.
 * GoCD
 * Jenkins
 * TravisCI
-* GitHub Actions
+* GitHub Actions (new)
 
-Note: Moving landscape. GitHub should release their own version soon (Actions).  
+Note: Enterprises tend to favour on site code and CI buy moving towards cloud hosted solutions.   
 
 --
 
 ## Common Features
 
 + GitHub Integration
-+ Support for performing tasks in parallel
++ Support for describing work-flows of parallel tasks
++ Ability to run against multiple versions / variants
 + Publishing / releasing built artifacts
 + SCM support: Git / Subversion / CVS / etc.
 + Language / build tool support
@@ -71,6 +72,8 @@ Note: Moving landscape. GitHub should release their own version soon (Actions).
 + Activate Travis CI with your repository
 + Add a `.travis.yml` file to your repository
 + Optional: add build badge to the repository
+
+Note: GitHub Actions is the same, and you don’t even have to leave GitHub!
 
 --
 
@@ -94,6 +97,55 @@ language: java
 
 Note: Travis looks at repo to work out how to build once it knows language.  
   One line is enough to build and validate your Java.  
+
+--
+
+## Travis vs GitHub Actions
+
+Travis:
+
+```yaml
+language: node_js
+before_script: "cd exercises/javascript"
+node_js:
+  - 10
+```
+<!-- .element: style="font-size: 35%" -->
+
+GitHub Actions:
+
+```yaml
+name: Node CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Read .nvmrc
+      run: echo ::set-output name=NVMRC::$(cat .nvmrc)
+      id: nvm
+      working-directory: exercises/javascript
+    - name: Setup node
+      uses: actions/setup-node@v1
+      with:
+        node-version: '${{ steps.nvm.outputs.NVMRC }}'
+    - name: npm install, build, and test
+      run: |
+        npm ci
+        npm test
+      working-directory: exercises/javascript
+      env:
+        CI: true
+```
+
+<!-- .element: style="font-size: 25%" -->
+
+Notes: GitHub Actions is more verbose but seems more extensible
 
 ---
 
