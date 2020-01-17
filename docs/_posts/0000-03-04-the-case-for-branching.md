@@ -209,11 +209,11 @@ And sometimes it's hard
 
 ### Different kinds of merge
 
-* Simple
++ Simple
     + Different files
     + Same file, different lines
     + Same file, same lines
-* Complicated
++ Complicated
 
 Note:
 Whiteboard what might be simple and complex merges with the group
