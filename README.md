@@ -51,6 +51,7 @@ Organisation mentors should look to exercise the knowledge we’ve covered in th
 * [The Cathedral and the Bazaar](http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/)
 * [Six Strategies for Application Deployment](https://thenewstack.io/deployment-strategies/)
 * [Git-it](https://github.com/jlord/git-it-electron) is a desktop (Mac, Windows and Linux) app that teaches you how to use Git and GitHub on the command line.
+* [Trunk Based Development](https://trunkbaseddevelopment.com/)—a while site dedicated to explaining TBD
 
 ## Slides
 
