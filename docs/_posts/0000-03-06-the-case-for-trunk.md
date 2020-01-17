@@ -20,6 +20,11 @@ Note: Reminder: opinion follows
 
 --
 
+> Branching is not the problem, merging is the problem.
+> —Jez Humble
+
+--
+
 ## How is work in progress handled?
 
 + Feature Toggles hide incomplete features in production
