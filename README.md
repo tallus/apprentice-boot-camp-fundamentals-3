@@ -44,12 +44,18 @@ Organisation mentors should look to exercise the knowledge we’ve covered in th
 
 <!--- For end of boot camp: Signposting for apprentices self study, further learning, online resources, practice etc. --->
 
+### CI/CD
+
 * Five minute read: [Continuous Integration by ThoughtWorks](https://www.thoughtworks.com/continuous-integration)
 * Book: [Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation](https://www.amazon.com/Continuous-Delivery-Deployment-Automation-Addison-Wesley-ebook/dp/B003YMNVC0) by Jez Humble and David Farley
 * [Feature Toggles](https://martinfowler.com/articles/feature-toggles.html) by Pete Hodgson at ThoughtWorks
 * [Knightmare: A DevOps Cautionary Tale](https://dougseven.com/2014/04/17/knightmare-a-devops-cautionary-tale/) about Knight Capital disaster
 * [The Cathedral and the Bazaar](http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/)
 * [Six Strategies for Application Deployment](https://thenewstack.io/deployment-strategies/)
+
+### Git
+
+* [Git Pretty](http://justinhileman.info/article/git-pretty/) explains how to fix git messes you find yourself in
 * [Git-it](https://github.com/jlord/git-it-electron) is a desktop (Mac, Windows and Linux) app that teaches you how to use Git and GitHub on the command line.
 * [Trunk Based Development](https://trunkbaseddevelopment.com/)—a while site dedicated to explaining TBD
 * [Git for Teams](http://gitforteams.com/) is has a book and some video aimed at helping you create a workflow strategy with your team, and learn to use Git
