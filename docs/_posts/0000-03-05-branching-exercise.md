@@ -40,3 +40,38 @@ Note: Created two branches
 <img height="600" src="https://wac-cdn.atlassian.com/dam/jcr:61ccc620-5249-4338-be66-94d563f2843c/05%20(2).svg?cdnVersion=kv">
 
 Note: Git Flow: another branch based workflow  
+
+---
+
+# Day One Feedback
+
+Ten responses
+
+--
+
+## You liked…
+
++ Practical examples of merge conflicts and branching / CI
++ Help and patience from teachers and mentors
++ Horizontal diagrams and understanding merge commits
++ Finding out what Continuous Deployment means
+
+--
+
+## Things that could be better
+
++ Travis exercise was vague
++ Git is hard video
++ Some slides moved too fast
++ More advanced git and common git gotchas
++ PDF boot camp notes
++ More complex CI/CD
+
+--
+
+## We liked…
+
++ You were punctual
++ You got stuck in with git
++ You helped each other
++ You made some good suggestions for content
