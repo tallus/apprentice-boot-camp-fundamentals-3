@@ -55,6 +55,7 @@ Ten responses
 + Help and patience from teachers and mentors
 + Horizontal diagrams and understanding merge commits
 + Finding out what Continuous Deployment means
++ Getting set up before-hand
 
 --
 
@@ -65,7 +66,7 @@ Ten responses
 + Some slides moved too fast
 + More advanced git and common git gotchas
 + PDF boot camp notes
-+ More complex CI/CD
++ More complex CI/CD scenarios, and deployment
 
 --
 
