@@ -277,3 +277,41 @@ What are they
 What do they look like  
 What is the effect  
 How do you resolve them  
+
+--
+
+## Recombining branches
+
++ Use a Pull Request
++ Merge or rebase on the command line and push
+
+--
+
+## Pull Requests
+
++ What is a Pull Request?
++ Request via collaboration tool to either merge or rebase one branch into another
++ Two branches might be in different repositories (across forks)
++ GitHub provides shortcut for recently pushed branches
++ GitHub guesses which branches you want to compare for the PR
++ Good practice to delete branch once PR is merged
+
+--
+
+## Recombining on the command line
+
+* Branch must be up to date with master
+    ```
+    git checkout feature-branch
+    git merge master
+    ```
+* or avoiding merge commits and keeping branch commits together
+    ```
+    git checkout feature-branch
+    git rebase master
+    ```
+* Merge branch (with merge commit unless rebased)
+    ```
+    git checkout master
+    git merge feature-branch
+    ```
