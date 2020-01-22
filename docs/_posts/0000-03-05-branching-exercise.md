@@ -5,10 +5,9 @@
   * `git checkout -b branch_to_create`
 * One person implements Story 2
 * One person implements Story 3
-* Add to your TaxCalculator implementation with regular commits
+* Both add to your TaxCalculator implementation with regular commits
 * Merge branches back to master one by one
 * Check Travis after each push
-
 
 Notes:
 See branch ```petrol_tax``` for a starting point to this exercise if they haven't completed the previous one.  
