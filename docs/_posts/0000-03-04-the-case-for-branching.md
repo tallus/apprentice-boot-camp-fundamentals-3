@@ -207,7 +207,7 @@ And sometimes it's hard
 --
 
 
-### Different kinds of merge
+## Different kinds of merge
 
 + Simple
     + Different files
@@ -220,7 +220,7 @@ Whiteboard what might be simple and complex merges with the group
 
 --
 
-### Diverging branches
+## Diverging branches
 
 <img src="images/diverging_branches.svg">
 
@@ -235,7 +235,7 @@ Like straddling two diverging canoes.
 
 --
 
-### A simple merge
+## A simple merge
 
 <img src="images/green_merge.png">
 
@@ -248,7 +248,7 @@ correct.
 --
 
 
-### A complicated merge
+## A complicated merge
 
 <img src="images/merge_hell.png">
 
@@ -258,7 +258,7 @@ Explain the merge view, our changes on the left, base version in the middle, oth
 
 --
 
-### Conflicts
+## Conflicts
 
 ```
 <<<<<<< HEAD:file.txt
