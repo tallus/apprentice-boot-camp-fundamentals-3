@@ -1,3 +1,14 @@
+## Exercise prep: add a collaborator
+
+* You are going to work in pairs
+* Both need to push to the same repository
+* Need to add the other person as a collaborator
+    * Click Settings in your forked repository on GitHub
+    * Choose ‘Collaborators & teams’
+    * Add your partner
+
+--
+
 ## Exercise: Make changes on branches
 
 * Work in pairs, ___***SHARE THE SAME GIT REPOSITORY***___
