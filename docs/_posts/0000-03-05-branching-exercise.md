@@ -1,12 +1,13 @@
-## Exercise: Make two changes using branches
+## Exercise: Make changes on branches
 
 * Work in pairs, ___***SHARE THE SAME GIT REPOSITORY***___
 * Create two branches based on the same start point
   * `git checkout -b branch_to_create`
-* One person implements Story 2 - Diesel vehicles
-* One person implements Story 3 - Alternative fuel vehicles
-* Add to your TaxCalculator implementation
-* Merge branches back to master one by one (observe Travis in between)
+* One person implements Story 2
+* One person implements Story 3
+* Add to your TaxCalculator implementation with regular commits
+* Merge branches back to master one by one
+* Check Travis after each push
 
 
 Notes:
